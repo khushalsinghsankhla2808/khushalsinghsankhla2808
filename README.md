@@ -1,20 +1,18 @@
 # Khushal Singh Sankhla
 
 <!-- GITHUB-ASSETS-START -->
-<div align="center">
+<p align="center">
+<table>
+<tr>
+<td width="440" align="center" valign="top"><img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="440"/></td>
+<td width="440" align="center" valign="top"><img src="info-card.svg" alt="Neofetch Info Card" width="440"/></td>
+</tr>
+</table>
+</p>
 
-<!-- Terminal ASCII Portrait -->
-<img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="600"/>
-<br/><br/>
-
-<!-- Neofetch Info Card -->
-<img src="info-card.svg" alt="Neofetch Info Card" width="820"/>
-<br/><br/>
-
-<!-- Contribution Graph -->
-<img src="github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/>
-
-</div>
+<p align="center">
+  <img src="github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/>
+</p>
 <!-- GITHUB-ASSETS-END -->
 
 ---

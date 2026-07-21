@@ -4,9 +4,10 @@ generate_readme.py
 Injects the three SVG cards into README.md using HTML comment markers.
 
   Layout:
-    1. terminal-card.svg (centered, max width ~600)
-    2. info-card.svg     (centered, full 2-column neofetch width 820)
-    3. contribution graph (centered, full width 900)
+    ┌───────────────────────────┬───────────────────────────┐
+    │  terminal-card.svg (440)  │    info-card.svg (440)    │
+    └───────────────────────────┴───────────────────────────┘
+         github-contribution-animation.svg (900)
 """
 
 import os
@@ -40,16 +41,17 @@ def _build_injection(
 
     return (
         f"{MARKER_START}\n"
-        '<div align="center">\n\n'
-        '<!-- Terminal ASCII Portrait -->\n'
-        f'<img src="{tc}" alt="Terminal ASCII Portrait" width="600"/>\n'
-        '<br/><br/>\n\n'
-        '<!-- Neofetch Info Card -->\n'
-        f'<img src="{ic}" alt="Neofetch Info Card" width="820"/>\n'
-        '<br/><br/>\n\n'
-        '<!-- Contribution Graph -->\n'
-        f'<img src="{cc}" alt="GitHub Contribution Graph" width="900"/>\n\n'
-        '</div>\n'
+        '<p align="center">\n'
+        "<table>\n"
+        "<tr>\n"
+        f'<td width="440" align="center" valign="top"><img src="{tc}" alt="Terminal ASCII Portrait" width="440"/></td>\n'
+        f'<td width="440" align="center" valign="top"><img src="{ic}" alt="Neofetch Info Card" width="440"/></td>\n'
+        "</tr>\n"
+        "</table>\n"
+        "</p>\n\n"
+        '<p align="center">\n'
+        f'  <img src="{cc}" alt="GitHub Contribution Graph" width="900"/>\n'
+        "</p>\n"
         f"{MARKER_END}"
     )
 
