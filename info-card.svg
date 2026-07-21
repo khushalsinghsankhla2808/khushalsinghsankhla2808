@@ -1,0 +1,500 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="390" height="570"
+     viewBox="0 0 390 570"
+     role="img" aria-label="Neofetch Info Card — khushalsinghsankhla2808">
+  <defs>
+    <!-- Card glass gradient -->
+    <linearGradient id="info-bg-grad" x1="0%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%"   stop-color="#1a2332" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.99"/>
+    </linearGradient>
+
+    <!-- Title bar gradient -->
+    <linearGradient id="info-titlebar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#2d333b"/>
+      <stop offset="100%" stop-color="#22272e"/>
+    </linearGradient>
+
+    <!-- Outer neon glow shadow -->
+    <filter id="info-card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
+      <feFlood flood-color="#c084fc" flood-opacity="0.22" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Accent bar gradient -->
+    <linearGradient id="accent-bar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#00ffff"/>
+      <stop offset="50%"  stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#39d353"/>
+    </linearGradient>
+
+    <!-- Clip path for text lines (slide-up) -->
+    <clipPath id="line-clip">
+      <rect x="0" y="0" width="390" height="570"/>
+    </clipPath>
+
+    <!-- Scan-line texture -->
+    <pattern id="info-scanlines" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="rgba(0,0,0,0.28)"/>
+    </pattern>
+
+    <!-- Glow for accent elements -->
+    <filter id="accent-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="390" height="570" fill="#0d1117" rx="12"/>
+  <!-- Window frame -->
+  <rect x="2" y="2" width="386" height="566" rx="10" ry="10"
+        fill="url(#info-bg-grad)" filter="url(#info-card-shadow)"/>
+  <rect x="2" y="2" width="386" height="566" rx="10" ry="10"
+        fill="none" stroke="#30363d" stroke-width="1" opacity="0.9"/>
+
+  <!-- Title bar -->
+  <rect x="2" y="2" width="386" height="36" rx="10" ry="10"
+        fill="url(#info-titlebar-grad)"/>
+  <rect x="2" y="28" width="386" height="10" fill="#22272e"/>
+  <line x1="2" y1="38" x2="388" y2="38"
+        stroke="#30363d" stroke-width="1" opacity="0.6"/>
+
+  <!-- Traffic lights -->
+  <circle cx="24" cy="20" r="6" fill="#ff4444">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="44" cy="20" r="6" fill="#ffd700">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="64" cy="20" r="6" fill="#39d353">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Title -->
+  <text x="195" y="25"
+        font-family="'SF Mono', 'Courier New', Courier, monospace"
+        font-size="11" fill="#8b949e" text-anchor="middle">
+    neofetch — khushalsinghsankhla2808
+  </text>
+  <!-- Left accent bar -->
+  <rect x="14" y="56" width="3" height="494" rx="2"
+        fill="url(#accent-bar-grad)" filter="url(#accent-glow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    <!-- Subtle color-cycle via gradients – simulate by animating opacity -->
+  </rect>
+  <!-- ASCII logo corner -->
+  <g transform-origin="341 85">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="0 341 86"
+                      to="360 341 86"
+                      dur="12s" repeatCount="indefinite"/>
+    <text x="316" y="73" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="9" fill="#00ffff" opacity="0.7" xml:space="preserve">  /\  </text>
+    <text x="316" y="86" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="9" fill="#c084fc" opacity="0.7" xml:space="preserve"> /  \ </text>
+    <text x="316" y="99" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="9" fill="#39d353" opacity="0.7" xml:space="preserve">/ λ  \</text>
+    <text x="316" y="112" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="9" fill="#58a6ff" opacity="0.7" xml:space="preserve">‾‾‾‾‾‾</text>
+  </g>
+  <!-- Line 0 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.000s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.000s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="75"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#00ffff"
+          xml:space="preserve">╭── Khushal Singh Sankhla</text>
+  </g>
+  <!-- Line 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.060s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.060s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="94"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#8b949e"
+          xml:space="preserve">│   khushalsinghsankhla2808@github</text>
+  </g>
+  <!-- Line 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.120s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.120s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="113"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#30363d"
+          xml:space="preserve">╰──────────────────────────────</text>
+  </g>
+  <!-- Line 4 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.240s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.240s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="151"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#ff8c00"
+          xml:space="preserve">OS          GitHub · Linux 6.x</text>
+  </g>
+  <!-- Line 5 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.300s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.300s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="170"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          xml:space="preserve">Shell       zsh + oh-my-zsh</text>
+  </g>
+  <!-- Line 6 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.360s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.360s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="189"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#58a6ff"
+          xml:space="preserve">Location    Rajasthan, India</text>
+  </g>
+  <!-- Line 7 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.420s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.420s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="208"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#c084fc"
+          xml:space="preserve">Status      🟢  Open to collaborate</text>
+  </g>
+  <!-- Line 9 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.540s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.540s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="246"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#ffd700"
+          xml:space="preserve">About</text>
+  </g>
+  <!-- Line 10 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.600s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.600s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="265"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  Full-Stack Dev · Open Source · Cyberpunk Aesthete</text>
+  </g>
+  <!-- Line 12 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.720s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.720s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="303"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#58a6ff"
+          xml:space="preserve">Stack</text>
+  </g>
+  <!-- Line 13 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.780s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.780s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="322"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ Python</text>
+  </g>
+  <!-- Line 14 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.840s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.840s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="341"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ TypeScript</text>
+  </g>
+  <!-- Line 15 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.900s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.900s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="360"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ React / Next.js</text>
+  </g>
+  <!-- Line 16 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="0.960s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="0.960s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="379"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ FastAPI</text>
+  </g>
+  <!-- Line 17 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.020s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.020s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="398"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ Docker</text>
+  </g>
+  <!-- Line 18 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.080s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.080s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="417"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ PostgreSQL</text>
+  </g>
+  <!-- Line 19 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.140s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.140s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="436"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#e6edf3"
+          xml:space="preserve">  ▸ Git / GitHub Actions</text>
+  </g>
+  <!-- Line 21 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.260s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.260s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="474"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#c084fc"
+          xml:space="preserve">Highlights</text>
+  </g>
+  <!-- Line 22 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.320s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.320s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="493"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#00ffff"
+          xml:space="preserve">  ★ 500+ Contributions</text>
+  </g>
+  <!-- Line 23 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.380s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.380s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="512"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#00ffff"
+          xml:space="preserve">  ★ 10+ Open Source Projects</text>
+  </g>
+  <!-- Line 24 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.440s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.440s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="531"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#00ffff"
+          xml:space="preserve">  ★ 3+ Years of Coding</text>
+  </g>
+  <!-- Line 25 -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="1.500s" dur="0.350s"
+             fill="freeze" calcMode="spline"
+             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0,12" to="0,0"
+                      begin="1.500s" dur="0.350s"
+                      fill="freeze" calcMode="spline"
+                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+    <text x="24" y="550"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#00ffff"
+          xml:space="preserve">  ★ CI/CD Enthusiast</text>
+  </g>
+  <rect x="2" y="38" width="386" height="532" fill="url(#info-scanlines)" opacity="0.12" pointer-events="none" rx="4"/>
+</svg>
