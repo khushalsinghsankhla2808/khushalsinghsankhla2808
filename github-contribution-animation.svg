@@ -8777,7 +8777,7 @@
     <g id="c52r2">
       <!-- base rect -->
       <rect x="756" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#161b22" opacity="0">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  from="0" to="1"
@@ -8795,16 +8795,6 @@
                  begin="1.400s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="756" y="80" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.700s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c52r3">
@@ -8879,7 +8869,7 @@
     <g id="c52r6">
       <!-- base rect -->
       <rect x="756" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#006d32" opacity="0">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  from="0" to="1"
@@ -8897,6 +8887,16 @@
                  begin="1.300s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="756" y="136" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.600s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
   <text x="648" y="161" font-family="'Courier New', Courier, monospace" font-size="7" fill="#8b949e" text-anchor="end">Less</text>
