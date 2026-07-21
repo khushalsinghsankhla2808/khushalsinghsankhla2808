@@ -2,6 +2,7 @@
 generate_readme.py
 ──────────────────
 Injects the three SVG cards into README.md using HTML comment markers.
+All SVG images (including the contribution graph) are clickable links to the user's GitHub profile/contributions.
 
   Layout: 1:4 ratio horizontal cards (250px vs 650px)
     ┌───────────────────────┬─────────────────────────────────────────────────────────┐
@@ -39,18 +40,20 @@ def _build_injection(
     ic = _rel(info_path)
     cc = _rel(contrib_path)
 
+    profile_url = f"https://github.com/{USERNAME}"
+
     return (
         f"{MARKER_START}\n"
         '<p align="center">\n'
         "<table>\n"
         "<tr>\n"
-        f'<td width="250" align="center" valign="top"><img src="{tc}" alt="Terminal ASCII Portrait" width="250"/></td>\n'
-        f'<td width="650" align="center" valign="top"><img src="{ic}" alt="Neofetch Info Card" width="650"/></td>\n'
+        f'<td width="250" align="center" valign="top"><a href="{profile_url}"><img src="{tc}" alt="Terminal ASCII Portrait" width="250"/></a></td>\n'
+        f'<td width="650" align="center" valign="top"><a href="{profile_url}"><img src="{ic}" alt="Neofetch Info Card" width="650"/></a></td>\n'
         "</tr>\n"
         "</table>\n"
         "</p>\n\n"
         '<p align="center">\n'
-        f'  <img src="{cc}" alt="GitHub Contribution Graph" width="900"/>\n'
+        f'  <a href="{profile_url}"><img src="{cc}" alt="GitHub Contribution Graph" width="900"/></a>\n'
         "</p>\n"
         f"{MARKER_END}"
     )

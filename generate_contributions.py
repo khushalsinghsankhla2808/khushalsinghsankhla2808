@@ -381,6 +381,8 @@ def generate(grid: list[list[int]], output_path: str = OUT_CONTRIB) -> None:
 
     parts.append(_defs_block())
 
+    parts.append(f"""  <a href="https://github.com/{USERNAME}" target="_blank">""")
+
     # Background
     parts.append(f"""  <!-- Background -->
   <rect width="{SVG_W}" height="{SVG_H}" fill="{PALETTE['bg']}" rx="8"/>
@@ -419,6 +421,7 @@ def generate(grid: list[list[int]], output_path: str = OUT_CONTRIB) -> None:
     <animate attributeName="opacity" values="0.2;0.7;0.2" dur="1.7s" repeatCount="indefinite"/>
   </circle>""")
 
+    parts.append("  </a>")
     parts.append("</svg>")
 
     svg_content = "\n".join(parts)
