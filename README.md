@@ -4,14 +4,14 @@
 <p align="center">
 <table>
 <tr>
-<td width="250" align="center" valign="top"><a href="https://github.com/khushalsinghsankhla2808"><img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="250"/></a></td>
-<td width="650" align="center" valign="top"><a href="https://github.com/khushalsinghsankhla2808"><img src="info-card.svg" alt="Neofetch Info Card" width="650"/></a></td>
+<td width="250" align="center" valign="top"><a href="https://github.com/khushalsinghsankhla2808"><img src="https://raw.githubusercontent.com/khushalsinghsankhla2808/khushalsinghsankhla2808/main/terminal-card.svg" alt="Terminal ASCII Portrait" width="250"/></a></td>
+<td width="650" align="center" valign="top"><a href="https://github.com/khushalsinghsankhla2808"><img src="https://raw.githubusercontent.com/khushalsinghsankhla2808/khushalsinghsankhla2808/main/info-card.svg" alt="Neofetch Info Card" width="650"/></a></td>
 </tr>
 </table>
 </p>
 
 <p align="center">
-  <a href="https://github.com/khushalsinghsankhla2808?tab=overview"><img src="github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/></a>
+  <a href="https://github.com/khushalsinghsankhla2808?tab=overview"><img src="https://raw.githubusercontent.com/khushalsinghsankhla2808/khushalsinghsankhla2808/main/github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/></a>
 </p>
 <!-- GITHUB-ASSETS-END -->
 

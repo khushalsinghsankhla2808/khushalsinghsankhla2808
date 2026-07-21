@@ -36,12 +36,12 @@ def _build_injection(
     info_path: str,
     contrib_path: str,
 ) -> str:
-    tc = _rel(terminal_path)
-    ic = _rel(info_path)
-    cc = _rel(contrib_path)
-
     profile_url = f"https://github.com/{USERNAME}"
     contrib_url = f"https://github.com/{USERNAME}?tab=overview"
+
+    tc = f"https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/main/{_rel(terminal_path)}"
+    ic = f"https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/main/{_rel(info_path)}"
+    cc = f"https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/main/{_rel(contrib_path)}"
 
     return (
         f"{MARKER_START}\n"
