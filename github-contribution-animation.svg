@@ -7792,7 +7792,7 @@
     <g id="c47r2">
       <!-- base rect -->
       <rect x="686" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -8411,7 +8411,7 @@
     <g id="c50r4">
       <!-- base rect -->
       <rect x="728" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -8632,7 +8632,7 @@
     <g id="c51r4">
       <!-- base rect -->
       <rect x="742" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -8869,7 +8869,7 @@
     <g id="c52r6">
       <!-- base rect -->
       <rect x="756" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
