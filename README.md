@@ -4,20 +4,15 @@
 
 <div align="center">
 
-<!-- Cards table: terminal portrait + neofetch info side by side -->
-<table>
-  <tr>
-    <td valign="top" align="center">
-      <img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="480"/>
-    </td>
-    <td valign="top" align="center">
-      <img src="info-card.svg" alt="Neofetch Info Card" width="390"/>
-    </td>
-  </tr>
-</table>
+<!-- Terminal ASCII Portrait -->
+<img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="600"/>
+<br/><br/>
 
-<!-- Contribution graph below the table -->
-<br/>
+<!-- Neofetch Info Card -->
+<img src="info-card.svg" alt="Neofetch Info Card" width="820"/>
+<br/><br/>
+
+<!-- Contribution Graph -->
 <img src="github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/>
 
 </div>

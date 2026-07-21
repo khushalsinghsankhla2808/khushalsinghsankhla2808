@@ -40,20 +40,15 @@ def _build_injection(
 
 <div align="center">
 
-<!-- Cards table: terminal portrait + neofetch info side by side -->
-<table>
-  <tr>
-    <td valign="top" align="center">
-      <img src="{tc}" alt="Terminal ASCII Portrait" width="480"/>
-    </td>
-    <td valign="top" align="center">
-      <img src="{ic}" alt="Neofetch Info Card" width="390"/>
-    </td>
-  </tr>
-</table>
+<!-- Terminal ASCII Portrait -->
+<img src="{tc}" alt="Terminal ASCII Portrait" width="600"/>
+<br/><br/>
 
-<!-- Contribution graph below the table -->
-<br/>
+<!-- Neofetch Info Card -->
+<img src="{ic}" alt="Neofetch Info Card" width="820"/>
+<br/><br/>
+
+<!-- Contribution Graph -->
 <img src="{cc}" alt="GitHub Contribution Graph" width="900"/>
 
 </div>
