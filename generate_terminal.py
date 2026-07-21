@@ -2,7 +2,7 @@
 generate_terminal.py
 ─────────────────────
 Generates a compact 250x400 terminal SVG card (`terminal-card.svg`) for 1:4 ratio layout:
-  • Fetches GitHub avatar → converts to 28x21 ASCII art via Pillow
+  • Fetches GitHub avatar → crops square center → converts to 30x16 ASCII art for PERFECT photo aspect ratio
   • macOS-style glassmorphic terminal window
   • Row-by-row ASCII reveal animation
   • Sweeping cursor block per row
@@ -13,6 +13,7 @@ import argparse
 import io
 import os
 import sys
+import xml.sax.saxutils as saxutils
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import PALETTE, OUT_TERMINAL, ANIM, USERNAME, DISPLAY_NAME
@@ -20,17 +21,18 @@ from config import PALETTE, OUT_TERMINAL, ANIM, USERNAME, DISPLAY_NAME
 SVG_W = 250
 SVG_H = 400
 
-ASCII_W = 28          # characters per row
-ASCII_H = 21          # rows
+# 30x16 grid compensates for ~1.8:1 character font aspect ratio to yield 1:1 square photo rendering
+ASCII_W = 30          # characters per row
+ASCII_H = 16          # rows
 DENSITY = " .`-_':,;^=+/\"|)\\<>)(i!lI?/\\|)(}{][tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
 
 CHAR_W = 7.0          # character advance width
-CHAR_H = 12.0         # row line height
-FONT_SIZE = 9.5
+CHAR_H = 13.0         # row line height
+FONT_SIZE = 10
 
 TITLE_BAR_H = 34
-PADDING_X = 27
-PADDING_Y = 14
+PADDING_X = 20
+PADDING_Y = 16
 INNER_X = 2
 INNER_Y = 2
 CONTENT_W = SVG_W - 4
@@ -42,7 +44,7 @@ def fetch_avatar(username: str):
     try:
         import requests
         from PIL import Image
-        url = f"https://github.com/{username}.png?size=200"
+        url = f"https://github.com/{username}.png?size=250"
         resp = requests.get(url, timeout=8)
         resp.raise_for_status()
         return Image.open(io.BytesIO(resp.content)).convert("RGB")
@@ -52,7 +54,7 @@ def fetch_avatar(username: str):
 
 
 def image_to_ascii(img) -> list[str]:
-    """Convert a Pillow Image to a list of ASCII rows."""
+    """Convert a Pillow Image to a list of ASCII rows with perfect 1:1 square photo aspect ratio."""
     if img is None:
         return _silhouette_ascii()
 
@@ -62,6 +64,16 @@ def image_to_ascii(img) -> list[str]:
         print("[warn] Pillow not installed, using fallback silhouette.")
         return _silhouette_ascii()
 
+    # Square crop image center to preserve perfect 1:1 photo aspect ratio
+    w, h = img.size
+    min_dim = min(w, h)
+    left = (w - min_dim) / 2
+    top = (h - min_dim) / 2
+    right = (w + min_dim) / 2
+    bottom = (h + min_dim) / 2
+    img = img.crop((left, top, right, bottom))
+
+    # Resize to 30x16 grid for font aspect ratio compensation
     img = img.resize((ASCII_W, ASCII_H), Image.LANCZOS)
     img = img.convert("L")  # grayscale
     img = ImageEnhance.Contrast(img).enhance(1.4)
@@ -79,29 +91,24 @@ def image_to_ascii(img) -> list[str]:
 
 
 def _silhouette_ascii() -> list[str]:
-    """Built-in fallback ASCII silhouette."""
+    """Built-in fallback ASCII silhouette with perfect proportions."""
     template = [
-        "       ......::::::......       ",
-        "    ..:::::::::::::::::::::..   ",
+        "      ......::::::......      ",
+        "   ..:::::::::::::::::::::..  ",
+        " .::::::::::::::::::::::::::::",
+        ".::::::::::::::::::::::::::::::.",
+        "::::::::::::::::::::::::::::::::",
+        "::::::::::::::::::::::::::::::::",
+        ":::::::.          .::::::::.::::",
+        ":::::::           ::::::::::::::",
+        ":::::::.         .::::::::::::::",
+        ":::::::::::::::::::::::::::::::.",
+        " :::::::::::::::::::::::::::::: ",
+        "  .:::::::::::      ::::::::::  ",
+        "    ::::::::          ::::::::  ",
+        "     ::::::::::::::::::::::::   ",
+        "    ::::::::::::::::::::::::::. ",
         "  .:::::::::::::::::::::::::::: ",
-        " .::::::::::::::::::::::::::::::.",
-        ".::::::::::::::::::::::::::::::::.",
-        ":::::::::::::::::::::::::::::::::",
-        ":::::::::::::::::::::::::::::::::",
-        "::::::::.          .::::::::.::::",
-        "::::::::           ::::::::::::::",
-        " :::::::.         .::::::::::::::",
-        " :::::::::::::::::::::::::::::::.",
-        "  :::::::::::::::::::::::::::::::",
-        "   .:::::::::::      ::::::::::::",
-        "     ::::::::          ::::::::::",
-        "      :::::::::::::::::::::::::: ",
-        "     :::::::::::::::::::::::::::.",
-        "   .:::::::::::::::::::::::::::: ",
-        " .::::::::::::::::::::::::::::::.",
-        ":::::::::::::::::...  ...::::::::",
-        ":::::::::::::.            .::::::",
-        ":::::::::::.                .::::",
     ]
     rows = []
     for row in template[:ASCII_H]:
@@ -177,7 +184,7 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
     terminal — {USERNAME[:12]}
   </text>""")
 
-    # ASCII Rows
+    # ASCII Rows (Centered horizontally)
     text_x = INNER_X + PADDING_X
     first_row_y = INNER_Y + TITLE_BAR_H + PADDING_Y
     row_w = ASCII_W * CHAR_W
@@ -187,8 +194,8 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
         row_y = first_row_y + i * CHAR_H
         baseline = row_y + CHAR_H - 2.5
         clip_id = f"clip-row-{i}"
-        row_start = 0.4 + i * 0.07
-        dur_s = 0.08
+        row_start = 0.4 + i * 0.08
+        dur_s = 0.09
 
         escaped = _escape_svg(row_text)
 
@@ -200,31 +207,30 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
     </clipPath>
     <text x="{text_x}" y="{baseline:.1f}" font-family="'Courier New', Courier, monospace" font-size="{FONT_SIZE}" fill="{ascii_color}" clip-path="url(#{clip_id})" xml:space="preserve">{escaped}</text>
     <!-- Cursor block -->
-    <rect x="{text_x}" y="{row_y:.1f}" width="5" height="9" fill="{PALETTE['white']}" visibility="hidden">
+    <rect x="{text_x}" y="{row_y:.1f}" width="5" height="10" fill="{PALETTE['white']}" visibility="hidden">
       <set attributeName="visibility" to="visible" begin="{row_start:.2f}s" dur="{dur_s:.2f}s"/>
       <animate attributeName="x" from="{text_x}" to="{text_x + row_w - 5:.1f}" begin="{row_start:.2f}s" dur="{dur_s:.2f}s" fill="freeze"/>
     </rect>
   </g>""")
 
     # Footer Typewriter lines (below ASCII art)
-    footer_y1 = 330.0
-    footer_y2 = 348.0
+    footer_y1 = 300.0
+    footer_y2 = 322.0
 
-    # Line 1: "$ whoami"
     parts.append(f"""  <!-- Footer Typewriter -->
-  <line x1="16" y1="316" x2="{SVG_W - 16}" y2="316" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
+  <line x1="16" y1="282" x2="{SVG_W - 16}" y2="282" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
   <g>
     <clipPath id="clip-footer-1">
-      <rect x="16" y="320" width="0" height="14">
-        <animate attributeName="width" from="0" to="80" begin="2.0s" dur="0.5s" fill="freeze"/>
+      <rect x="16" y="286" width="0" height="14">
+        <animate attributeName="width" from="0" to="80" begin="1.8s" dur="0.5s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="16" y="{footer_y1}" font-family="'Courier New', Courier, monospace" font-size="10.5" clip-path="url(#clip-footer-1)">
       <tspan fill="{PALETTE['cyan']}">$ </tspan><tspan fill="{PALETTE['white']}">whoami</tspan>
     </text>
-    <rect x="16" y="321" width="5" height="10" fill="#ffffff" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="2.0s" dur="0.5s"/>
-      <animate attributeName="x" from="16" to="78" begin="2.0s" dur="0.5s" fill="freeze"/>
+    <rect x="16" y="287" width="5" height="10" fill="#ffffff" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="1.8s" dur="0.5s"/>
+      <animate attributeName="x" from="16" to="78" begin="1.8s" dur="0.5s" fill="freeze"/>
     </rect>
   </g>""")
 
@@ -232,16 +238,16 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
     escaped_name = _escape_svg(DISPLAY_NAME)
     parts.append(f"""  <g>
     <clipPath id="clip-footer-2">
-      <rect x="16" y="336" width="0" height="16">
-        <animate attributeName="width" from="0" to="210" begin="2.6s" dur="1.2s" fill="freeze"/>
+      <rect x="16" y="308" width="0" height="16">
+        <animate attributeName="width" from="0" to="210" begin="2.4s" dur="1.2s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="16" y="{footer_y2}" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="{PALETTE['cyan']}" font-weight="bold" clip-path="url(#clip-footer-2)">{escaped_name}</text>
     <!-- Blinking final cursor -->
-    <rect x="16" y="338" width="5" height="10" fill="#ffffff" opacity="0">
-      <set attributeName="opacity" to="1" begin="2.6s" dur="1.2s"/>
-      <animate attributeName="x" from="16" to="160" begin="2.6s" dur="1.2s" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="3.8s" dur="0.8s" repeatCount="indefinite"/>
+    <rect x="16" y="310" width="5" height="10" fill="#ffffff" opacity="0">
+      <set attributeName="opacity" to="1" begin="2.4s" dur="1.2s"/>
+      <animate attributeName="x" from="16" to="160" begin="2.4s" dur="1.2s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="3.6s" dur="0.8s" repeatCount="indefinite"/>
     </rect>
   </g>""")
 
