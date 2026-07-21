@@ -106,7 +106,7 @@ def _fetch_github_graphql(username: str, token: str) -> list[list[int]]:
         "FOURTH_QUARTILE":4,
     }
     grid = []
-    for week in weeks_raw[:WEEKS]:
+    for week in weeks_raw[-WEEKS:]:
         col = []
         for day in week["contributionDays"]:
             col.append(level_map.get(day["contributionLevel"], 0))
