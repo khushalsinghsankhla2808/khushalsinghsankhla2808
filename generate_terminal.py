@@ -201,8 +201,8 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
 
         parts.append(f"""  <g>
     <clipPath id="{clip_id}">
-      <rect x="{text_x}" y="{row_y}" width="0" height="{CHAR_H + 1}">
-        <animate attributeName="width" from="0" to="{row_w}" begin="{row_start:.2f}s" dur="{dur_s:.2f}s" fill="freeze"/>
+      <rect x="{text_x}" y="{row_y}" width="{row_w}" height="{CHAR_H + 1}">
+        <animate attributeName="width" values="0;{row_w}" begin="{row_start:.2f}s" dur="{dur_s:.2f}s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="{text_x}" y="{baseline:.1f}" font-family="'Courier New', Courier, monospace" font-size="{FONT_SIZE}" fill="{ascii_color}" clip-path="url(#{clip_id})" xml:space="preserve">{escaped}</text>
@@ -221,8 +221,8 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
   <line x1="16" y1="282" x2="{SVG_W - 16}" y2="282" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
   <g>
     <clipPath id="clip-footer-1">
-      <rect x="16" y="286" width="0" height="14">
-        <animate attributeName="width" from="0" to="80" begin="1.8s" dur="0.5s" fill="freeze"/>
+      <rect x="16" y="286" width="80" height="14">
+        <animate attributeName="width" values="0;80" begin="1.8s" dur="0.5s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="16" y="{footer_y1}" font-family="'Courier New', Courier, monospace" font-size="10.5" clip-path="url(#clip-footer-1)">
@@ -238,14 +238,13 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
     escaped_name = _escape_svg(DISPLAY_NAME)
     parts.append(f"""  <g>
     <clipPath id="clip-footer-2">
-      <rect x="16" y="308" width="0" height="16">
-        <animate attributeName="width" from="0" to="210" begin="2.4s" dur="1.2s" fill="freeze"/>
+      <rect x="16" y="308" width="210" height="16">
+        <animate attributeName="width" values="0;210" begin="2.4s" dur="1.2s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="16" y="{footer_y2}" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="{PALETTE['cyan']}" font-weight="bold" clip-path="url(#clip-footer-2)">{escaped_name}</text>
     <!-- Blinking final cursor -->
-    <rect x="16" y="310" width="5" height="10" fill="#ffffff" opacity="0">
-      <set attributeName="opacity" to="1" begin="2.4s" dur="1.2s"/>
+    <rect x="16" y="310" width="5" height="10" fill="#ffffff" opacity="1">
       <animate attributeName="x" from="16" to="160" begin="2.4s" dur="1.2s" fill="freeze"/>
       <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="3.6s" dur="0.8s" repeatCount="indefinite"/>
     </rect>

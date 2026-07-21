@@ -47,8 +47,8 @@
   </text>
   <g>
     <clipPath id="clip-row-0">
-      <rect x="22" y="52.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.40s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="52.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.40s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="62.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-0)" xml:space="preserve">`.        +&gt;?!(]|&quot;            </text>
@@ -60,8 +60,8 @@
   </g>
   <g>
     <clipPath id="clip-row-1">
-      <rect x="22" y="65.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.48s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="65.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.48s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="75.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-1)" xml:space="preserve">        :*$$$$$$$$X           </text>
@@ -73,8 +73,8 @@
   </g>
   <g>
     <clipPath id="clip-row-2">
-      <rect x="22" y="78.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.56s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="78.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.56s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="88.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-2)" xml:space="preserve">        z$$$$$omni|           </text>
@@ -86,8 +86,8 @@
   </g>
   <g>
     <clipPath id="clip-row-3">
-      <rect x="22" y="91.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.64s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="91.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.64s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="101.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-3)" xml:space="preserve">        W$$$$pnt}++,          </text>
@@ -99,8 +99,8 @@
   </g>
   <g>
     <clipPath id="clip-row-4">
-      <rect x="22" y="104.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.72s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="104.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.72s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="114.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-4)" xml:space="preserve">        )%Oboz](I{(           </text>
@@ -112,8 +112,8 @@
   </g>
   <g>
     <clipPath id="clip-row-5">
-      <rect x="22" y="117.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.80s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="117.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.80s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="127.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-5)" xml:space="preserve">         _zjkpx!&quot;x|`          </text>
@@ -125,8 +125,8 @@
   </g>
   <g>
     <clipPath id="clip-row-6">
-      <rect x="22" y="130.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.88s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="130.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.88s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="140.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-6)" xml:space="preserve">          /ma8bUr}\           </text>
@@ -138,8 +138,8 @@
   </g>
   <g>
     <clipPath id="clip-row-7">
-      <rect x="22" y="143.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="0.96s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="143.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="0.96s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="153.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-7)" xml:space="preserve">          )apphahZ)'`         </text>
@@ -151,8 +151,8 @@
   </g>
   <g>
     <clipPath id="clip-row-8">
-      <rect x="22" y="156.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.04s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="156.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.04s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="166.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-8)" xml:space="preserve">       /|q*?UYvcOr.rULct|i    </text>
@@ -164,8 +164,8 @@
   </g>
   <g>
     <clipPath id="clip-row-9">
-      <rect x="22" y="169.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.12s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="169.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.12s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="179.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-9)" xml:space="preserve">.  +/vm*@$$j&quot;})]C)}z0Zkdd*(   </text>
@@ -177,8 +177,8 @@
   </g>
   <g>
     <clipPath id="clip-row-10">
-      <rect x="22" y="182.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.20s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="182.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.20s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="192.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-10)" xml:space="preserve">..OW&amp;&amp;MoM#%@l;;)| nOZZqZwaw&quot;  </text>
@@ -190,8 +190,8 @@
   </g>
   <g>
     <clipPath id="clip-row-11">
-      <rect x="22" y="195.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.28s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="195.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.28s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="205.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-11)" xml:space="preserve"> =$$WWWMWMa$n     jm0dJCm*hY: </text>
@@ -203,8 +203,8 @@
   </g>
   <g>
     <clipPath id="clip-row-12">
-      <rect x="22" y="208.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.36s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="208.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.36s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="218.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-12)" xml:space="preserve"> t$$$$B%W&amp;MM%)    Xdww)cw88pt </text>
@@ -216,8 +216,8 @@
   </g>
   <g>
     <clipPath id="clip-row-13">
-      <rect x="22" y="221.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.44s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="221.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.44s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="231.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-13)" xml:space="preserve">'o$$$$$$$%%&amp;%d   _qkaoapq$$hw)</text>
@@ -229,8 +229,8 @@
   </g>
   <g>
     <clipPath id="clip-row-14">
-      <rect x="22" y="234.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.52s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="234.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.52s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="244.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-14)" xml:space="preserve">I$$$$$$$$$B@8@u  !&amp;h#*kw*$$Mhv</text>
@@ -242,8 +242,8 @@
   </g>
   <g>
     <clipPath id="clip-row-15">
-      <rect x="22" y="247.0" width="0" height="14.0">
-        <animate attributeName="width" from="0" to="210.0" begin="1.60s" dur="0.09s" fill="freeze"/>
+      <rect x="22" y="247.0" width="210.0" height="14.0">
+        <animate attributeName="width" values="0;210.0" begin="1.60s" dur="0.09s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="22" y="257.5" font-family="'Courier New', Courier, monospace" font-size="10" fill="#39d353" clip-path="url(#clip-row-15)" xml:space="preserve">u$$$$$$$$$$$$B8I uBMW*od8$$$Mk</text>
@@ -257,8 +257,8 @@
   <line x1="16" y1="282" x2="234" y2="282" stroke="#30363d" stroke-width="0.8" opacity="0.6"/>
   <g>
     <clipPath id="clip-footer-1">
-      <rect x="16" y="286" width="0" height="14">
-        <animate attributeName="width" from="0" to="80" begin="1.8s" dur="0.5s" fill="freeze"/>
+      <rect x="16" y="286" width="80" height="14">
+        <animate attributeName="width" values="0;80" begin="1.8s" dur="0.5s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="16" y="300.0" font-family="'Courier New', Courier, monospace" font-size="10.5" clip-path="url(#clip-footer-1)">
@@ -271,14 +271,13 @@
   </g>
   <g>
     <clipPath id="clip-footer-2">
-      <rect x="16" y="308" width="0" height="16">
-        <animate attributeName="width" from="0" to="210" begin="2.4s" dur="1.2s" fill="freeze"/>
+      <rect x="16" y="308" width="210" height="16">
+        <animate attributeName="width" values="0;210" begin="2.4s" dur="1.2s" fill="freeze"/>
       </rect>
     </clipPath>
     <text x="16" y="322.0" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#00ffff" font-weight="bold" clip-path="url(#clip-footer-2)">Khushal Singh Sankhla</text>
     <!-- Blinking final cursor -->
-    <rect x="16" y="310" width="5" height="10" fill="#ffffff" opacity="0">
-      <set attributeName="opacity" to="1" begin="2.4s" dur="1.2s"/>
+    <rect x="16" y="310" width="5" height="10" fill="#ffffff" opacity="1">
       <animate attributeName="x" from="16" to="160" begin="2.4s" dur="1.2s" fill="freeze"/>
       <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="3.6s" dur="0.8s" repeatCount="indefinite"/>
     </rect>

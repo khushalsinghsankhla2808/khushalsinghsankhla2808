@@ -299,10 +299,10 @@ def _cell_element(col: int, row: int, level: int, cell_id: str) -> str:
     cell_svg = f"""    <g id="{cell_id}">
       <!-- base rect -->
       <rect x="{x}" y="{y}" width="{CELL_SIZE}" height="{CELL_SIZE}" rx="{CELL_RADIUS}" ry="{CELL_RADIUS}"
-            fill="{color}"{filter_attr} opacity="0">
+            fill="{color}"{filter_attr}>
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="{ft(reveal_start)}" dur="{ft(ANIM['contrib_reveal_dur'])}"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>

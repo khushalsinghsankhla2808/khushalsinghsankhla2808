@@ -103,7 +103,7 @@ def generate(output_path: str = OUT_INFO) -> None:
 
     # Header Identity
     parts.append(f"""  <!-- LEFT COLUMN -->
-  <g opacity="0">
+  <g>
     <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.35s" fill="freeze"/>
     <text x="{lx}" y="58" font-family="{font_family}" font-size="16" font-weight="bold" fill="{PALETTE['purple']}">{_escape_svg(DISPLAY_NAME)}</text>
     <text x="{lx}" y="74" font-family="{font_family}" font-size="10" fill="{PALETTE['muted']}">Data Analytics • BI • AI Developer</text>
@@ -111,7 +111,7 @@ def generate(output_path: str = OUT_INFO) -> None:
   </g>""")
 
     # System Info & About
-    parts.append(f"""  <g opacity="0">
+    parts.append(f"""  <g>
     <animate attributeName="opacity" from="0" to="1" begin="0.4s" dur="0.35s" fill="freeze"/>
     <text x="{lx}" y="103" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['yellow']}">╭─ 🖥️ System &amp; Education</text>
     
@@ -126,7 +126,7 @@ def generate(output_path: str = OUT_INFO) -> None:
   </g>""")
 
     # Highlights
-    parts.append(f"""  <g opacity="0">
+    parts.append(f"""  <g>
     <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.35s" fill="freeze"/>
     <text x="{lx}" y="215" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['green']}">╭─ 🏆 Key Highlights</text>
     
@@ -146,7 +146,7 @@ def generate(output_path: str = OUT_INFO) -> None:
 
     # Tech Stack
     parts.append(f"""  <!-- RIGHT COLUMN -->
-  <g opacity="0">
+  <g>
     <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="0.35s" fill="freeze"/>
     <text x="{rx}" y="58" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['cyan']}">╭─ 🛠️ Tech Stack</text>
     
@@ -157,7 +157,7 @@ def generate(output_path: str = OUT_INFO) -> None:
   </g>""")
 
     # Featured Projects
-    parts.append(f"""  <g opacity="0">
+    parts.append(f"""  <g>
     <animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.35s" fill="freeze"/>
     <text x="{rx}" y="153" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['blue']}">╭─ 📂 Featured Projects</text>
     
@@ -168,7 +168,7 @@ def generate(output_path: str = OUT_INFO) -> None:
   </g>""")
 
     # Certifications
-    parts.append(f"""  <g opacity="0">
+    parts.append(f"""  <g>
     <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.35s" fill="freeze"/>
     <text x="{rx}" y="248" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['yellow']}">╭─ 📜 Certifications</text>
     
@@ -177,7 +177,7 @@ def generate(output_path: str = OUT_INFO) -> None:
   </g>""")
 
     # Bottom Banner Footer (across full 650px width)
-    parts.append(f"""  <g opacity="0">
+    parts.append(f"""  <g>
     <animate attributeName="opacity" from="0" to="1" begin="1.1s" dur="0.35s" fill="freeze"/>
     <line x1="20" y1="316" x2="{SVG_W - 20}" y2="316" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
     

@@ -89,10 +89,10 @@
     <g id="c00r0">
       <!-- base rect -->
       <rect x="28" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -112,10 +112,10 @@
     <g id="c00r1">
       <!-- base rect -->
       <rect x="28" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -135,10 +135,10 @@
     <g id="c00r2">
       <!-- base rect -->
       <rect x="28" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -158,10 +158,10 @@
     <g id="c00r3">
       <!-- base rect -->
       <rect x="28" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -181,10 +181,10 @@
     <g id="c00r4">
       <!-- base rect -->
       <rect x="28" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -204,10 +204,10 @@
     <g id="c00r5">
       <!-- base rect -->
       <rect x="28" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -227,10 +227,10 @@
     <g id="c00r6">
       <!-- base rect -->
       <rect x="28" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -250,10 +250,10 @@
     <g id="c01r0">
       <!-- base rect -->
       <rect x="42" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -273,10 +273,10 @@
     <g id="c01r1">
       <!-- base rect -->
       <rect x="42" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -296,10 +296,10 @@
     <g id="c01r2">
       <!-- base rect -->
       <rect x="42" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -319,10 +319,10 @@
     <g id="c01r3">
       <!-- base rect -->
       <rect x="42" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -342,10 +342,10 @@
     <g id="c01r4">
       <!-- base rect -->
       <rect x="42" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -365,10 +365,10 @@
     <g id="c01r5">
       <!-- base rect -->
       <rect x="42" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -388,10 +388,10 @@
     <g id="c01r6">
       <!-- base rect -->
       <rect x="42" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -411,10 +411,10 @@
     <g id="c02r0">
       <!-- base rect -->
       <rect x="56" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -434,10 +434,10 @@
     <g id="c02r1">
       <!-- base rect -->
       <rect x="56" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -457,10 +457,10 @@
     <g id="c02r2">
       <!-- base rect -->
       <rect x="56" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -480,10 +480,10 @@
     <g id="c02r3">
       <!-- base rect -->
       <rect x="56" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -503,10 +503,10 @@
     <g id="c02r4">
       <!-- base rect -->
       <rect x="56" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -526,10 +526,10 @@
     <g id="c02r5">
       <!-- base rect -->
       <rect x="56" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -549,10 +549,10 @@
     <g id="c02r6">
       <!-- base rect -->
       <rect x="56" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -572,10 +572,10 @@
     <g id="c03r0">
       <!-- base rect -->
       <rect x="70" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -595,10 +595,10 @@
     <g id="c03r1">
       <!-- base rect -->
       <rect x="70" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -618,10 +618,10 @@
     <g id="c03r2">
       <!-- base rect -->
       <rect x="70" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -641,10 +641,10 @@
     <g id="c03r3">
       <!-- base rect -->
       <rect x="70" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -664,10 +664,10 @@
     <g id="c03r4">
       <!-- base rect -->
       <rect x="70" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -687,10 +687,10 @@
     <g id="c03r5">
       <!-- base rect -->
       <rect x="70" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -710,10 +710,10 @@
     <g id="c03r6">
       <!-- base rect -->
       <rect x="70" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -733,10 +733,10 @@
     <g id="c04r0">
       <!-- base rect -->
       <rect x="84" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -756,10 +756,10 @@
     <g id="c04r1">
       <!-- base rect -->
       <rect x="84" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -779,10 +779,10 @@
     <g id="c04r2">
       <!-- base rect -->
       <rect x="84" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -802,10 +802,10 @@
     <g id="c04r3">
       <!-- base rect -->
       <rect x="84" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -825,10 +825,10 @@
     <g id="c04r4">
       <!-- base rect -->
       <rect x="84" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -848,10 +848,10 @@
     <g id="c04r5">
       <!-- base rect -->
       <rect x="84" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -871,10 +871,10 @@
     <g id="c04r6">
       <!-- base rect -->
       <rect x="84" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -894,10 +894,10 @@
     <g id="c05r0">
       <!-- base rect -->
       <rect x="98" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -917,10 +917,10 @@
     <g id="c05r1">
       <!-- base rect -->
       <rect x="98" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -940,10 +940,10 @@
     <g id="c05r2">
       <!-- base rect -->
       <rect x="98" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -963,10 +963,10 @@
     <g id="c05r3">
       <!-- base rect -->
       <rect x="98" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -986,10 +986,10 @@
     <g id="c05r4">
       <!-- base rect -->
       <rect x="98" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1009,10 +1009,10 @@
     <g id="c05r5">
       <!-- base rect -->
       <rect x="98" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1032,10 +1032,10 @@
     <g id="c05r6">
       <!-- base rect -->
       <rect x="98" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1055,10 +1055,10 @@
     <g id="c06r0">
       <!-- base rect -->
       <rect x="112" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1078,10 +1078,10 @@
     <g id="c06r1">
       <!-- base rect -->
       <rect x="112" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1101,10 +1101,10 @@
     <g id="c06r2">
       <!-- base rect -->
       <rect x="112" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1124,10 +1124,10 @@
     <g id="c06r3">
       <!-- base rect -->
       <rect x="112" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1147,10 +1147,10 @@
     <g id="c06r4">
       <!-- base rect -->
       <rect x="112" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1170,10 +1170,10 @@
     <g id="c06r5">
       <!-- base rect -->
       <rect x="112" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1193,10 +1193,10 @@
     <g id="c06r6">
       <!-- base rect -->
       <rect x="112" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1216,10 +1216,10 @@
     <g id="c07r0">
       <!-- base rect -->
       <rect x="126" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1239,10 +1239,10 @@
     <g id="c07r1">
       <!-- base rect -->
       <rect x="126" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1262,10 +1262,10 @@
     <g id="c07r2">
       <!-- base rect -->
       <rect x="126" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1285,10 +1285,10 @@
     <g id="c07r3">
       <!-- base rect -->
       <rect x="126" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1308,10 +1308,10 @@
     <g id="c07r4">
       <!-- base rect -->
       <rect x="126" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1331,10 +1331,10 @@
     <g id="c07r5">
       <!-- base rect -->
       <rect x="126" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1354,10 +1354,10 @@
     <g id="c07r6">
       <!-- base rect -->
       <rect x="126" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1377,10 +1377,10 @@
     <g id="c08r0">
       <!-- base rect -->
       <rect x="140" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1400,10 +1400,10 @@
     <g id="c08r1">
       <!-- base rect -->
       <rect x="140" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1423,10 +1423,10 @@
     <g id="c08r2">
       <!-- base rect -->
       <rect x="140" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1446,10 +1446,10 @@
     <g id="c08r3">
       <!-- base rect -->
       <rect x="140" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1469,10 +1469,10 @@
     <g id="c08r4">
       <!-- base rect -->
       <rect x="140" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1492,10 +1492,10 @@
     <g id="c08r5">
       <!-- base rect -->
       <rect x="140" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1515,10 +1515,10 @@
     <g id="c08r6">
       <!-- base rect -->
       <rect x="140" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1538,10 +1538,10 @@
     <g id="c09r0">
       <!-- base rect -->
       <rect x="154" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1561,10 +1561,10 @@
     <g id="c09r1">
       <!-- base rect -->
       <rect x="154" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1584,10 +1584,10 @@
     <g id="c09r2">
       <!-- base rect -->
       <rect x="154" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1607,10 +1607,10 @@
     <g id="c09r3">
       <!-- base rect -->
       <rect x="154" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1630,10 +1630,10 @@
     <g id="c09r4">
       <!-- base rect -->
       <rect x="154" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1653,10 +1653,10 @@
     <g id="c09r5">
       <!-- base rect -->
       <rect x="154" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1676,10 +1676,10 @@
     <g id="c09r6">
       <!-- base rect -->
       <rect x="154" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1699,10 +1699,10 @@
     <g id="c10r0">
       <!-- base rect -->
       <rect x="168" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1722,10 +1722,10 @@
     <g id="c10r1">
       <!-- base rect -->
       <rect x="168" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1745,10 +1745,10 @@
     <g id="c10r2">
       <!-- base rect -->
       <rect x="168" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1768,10 +1768,10 @@
     <g id="c10r3">
       <!-- base rect -->
       <rect x="168" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1791,10 +1791,10 @@
     <g id="c10r4">
       <!-- base rect -->
       <rect x="168" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1814,10 +1814,10 @@
     <g id="c10r5">
       <!-- base rect -->
       <rect x="168" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1837,10 +1837,10 @@
     <g id="c10r6">
       <!-- base rect -->
       <rect x="168" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1860,10 +1860,10 @@
     <g id="c11r0">
       <!-- base rect -->
       <rect x="182" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1883,10 +1883,10 @@
     <g id="c11r1">
       <!-- base rect -->
       <rect x="182" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1906,10 +1906,10 @@
     <g id="c11r2">
       <!-- base rect -->
       <rect x="182" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1929,10 +1929,10 @@
     <g id="c11r3">
       <!-- base rect -->
       <rect x="182" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1952,10 +1952,10 @@
     <g id="c11r4">
       <!-- base rect -->
       <rect x="182" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1975,10 +1975,10 @@
     <g id="c11r5">
       <!-- base rect -->
       <rect x="182" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -1998,10 +1998,10 @@
     <g id="c11r6">
       <!-- base rect -->
       <rect x="182" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2021,10 +2021,10 @@
     <g id="c12r0">
       <!-- base rect -->
       <rect x="196" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2044,10 +2044,10 @@
     <g id="c12r1">
       <!-- base rect -->
       <rect x="196" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2067,10 +2067,10 @@
     <g id="c12r2">
       <!-- base rect -->
       <rect x="196" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2090,10 +2090,10 @@
     <g id="c12r3">
       <!-- base rect -->
       <rect x="196" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2113,10 +2113,10 @@
     <g id="c12r4">
       <!-- base rect -->
       <rect x="196" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2136,10 +2136,10 @@
     <g id="c12r5">
       <!-- base rect -->
       <rect x="196" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2159,10 +2159,10 @@
     <g id="c12r6">
       <!-- base rect -->
       <rect x="196" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2182,10 +2182,10 @@
     <g id="c13r0">
       <!-- base rect -->
       <rect x="210" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2205,10 +2205,10 @@
     <g id="c13r1">
       <!-- base rect -->
       <rect x="210" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2228,10 +2228,10 @@
     <g id="c13r2">
       <!-- base rect -->
       <rect x="210" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2251,10 +2251,10 @@
     <g id="c13r3">
       <!-- base rect -->
       <rect x="210" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2274,10 +2274,10 @@
     <g id="c13r4">
       <!-- base rect -->
       <rect x="210" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2297,10 +2297,10 @@
     <g id="c13r5">
       <!-- base rect -->
       <rect x="210" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2320,10 +2320,10 @@
     <g id="c13r6">
       <!-- base rect -->
       <rect x="210" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2343,10 +2343,10 @@
     <g id="c14r0">
       <!-- base rect -->
       <rect x="224" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2366,10 +2366,10 @@
     <g id="c14r1">
       <!-- base rect -->
       <rect x="224" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2389,10 +2389,10 @@
     <g id="c14r2">
       <!-- base rect -->
       <rect x="224" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2412,10 +2412,10 @@
     <g id="c14r3">
       <!-- base rect -->
       <rect x="224" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2435,10 +2435,10 @@
     <g id="c14r4">
       <!-- base rect -->
       <rect x="224" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2458,10 +2458,10 @@
     <g id="c14r5">
       <!-- base rect -->
       <rect x="224" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2481,10 +2481,10 @@
     <g id="c14r6">
       <!-- base rect -->
       <rect x="224" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2504,10 +2504,10 @@
     <g id="c15r0">
       <!-- base rect -->
       <rect x="238" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2527,10 +2527,10 @@
     <g id="c15r1">
       <!-- base rect -->
       <rect x="238" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2550,10 +2550,10 @@
     <g id="c15r2">
       <!-- base rect -->
       <rect x="238" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2573,10 +2573,10 @@
     <g id="c15r3">
       <!-- base rect -->
       <rect x="238" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2596,10 +2596,10 @@
     <g id="c15r4">
       <!-- base rect -->
       <rect x="238" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2619,10 +2619,10 @@
     <g id="c15r5">
       <!-- base rect -->
       <rect x="238" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2642,10 +2642,10 @@
     <g id="c15r6">
       <!-- base rect -->
       <rect x="238" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2665,10 +2665,10 @@
     <g id="c16r0">
       <!-- base rect -->
       <rect x="252" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2688,10 +2688,10 @@
     <g id="c16r1">
       <!-- base rect -->
       <rect x="252" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2711,10 +2711,10 @@
     <g id="c16r2">
       <!-- base rect -->
       <rect x="252" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2734,10 +2734,10 @@
     <g id="c16r3">
       <!-- base rect -->
       <rect x="252" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2757,10 +2757,10 @@
     <g id="c16r4">
       <!-- base rect -->
       <rect x="252" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2780,10 +2780,10 @@
     <g id="c16r5">
       <!-- base rect -->
       <rect x="252" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2803,10 +2803,10 @@
     <g id="c16r6">
       <!-- base rect -->
       <rect x="252" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2826,10 +2826,10 @@
     <g id="c17r0">
       <!-- base rect -->
       <rect x="266" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2849,10 +2849,10 @@
     <g id="c17r1">
       <!-- base rect -->
       <rect x="266" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2872,10 +2872,10 @@
     <g id="c17r2">
       <!-- base rect -->
       <rect x="266" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2895,10 +2895,10 @@
     <g id="c17r3">
       <!-- base rect -->
       <rect x="266" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2918,10 +2918,10 @@
     <g id="c17r4">
       <!-- base rect -->
       <rect x="266" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2941,10 +2941,10 @@
     <g id="c17r5">
       <!-- base rect -->
       <rect x="266" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2964,10 +2964,10 @@
     <g id="c17r6">
       <!-- base rect -->
       <rect x="266" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -2987,10 +2987,10 @@
     <g id="c18r0">
       <!-- base rect -->
       <rect x="280" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3010,10 +3010,10 @@
     <g id="c18r1">
       <!-- base rect -->
       <rect x="280" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3033,10 +3033,10 @@
     <g id="c18r2">
       <!-- base rect -->
       <rect x="280" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3056,10 +3056,10 @@
     <g id="c18r3">
       <!-- base rect -->
       <rect x="280" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3079,10 +3079,10 @@
     <g id="c18r4">
       <!-- base rect -->
       <rect x="280" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3102,10 +3102,10 @@
     <g id="c18r5">
       <!-- base rect -->
       <rect x="280" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3125,10 +3125,10 @@
     <g id="c18r6">
       <!-- base rect -->
       <rect x="280" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3148,10 +3148,10 @@
     <g id="c19r0">
       <!-- base rect -->
       <rect x="294" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3171,10 +3171,10 @@
     <g id="c19r1">
       <!-- base rect -->
       <rect x="294" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3194,10 +3194,10 @@
     <g id="c19r2">
       <!-- base rect -->
       <rect x="294" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3217,10 +3217,10 @@
     <g id="c19r3">
       <!-- base rect -->
       <rect x="294" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3240,10 +3240,10 @@
     <g id="c19r4">
       <!-- base rect -->
       <rect x="294" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3263,10 +3263,10 @@
     <g id="c19r5">
       <!-- base rect -->
       <rect x="294" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3286,10 +3286,10 @@
     <g id="c19r6">
       <!-- base rect -->
       <rect x="294" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.475s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3309,10 +3309,10 @@
     <g id="c20r0">
       <!-- base rect -->
       <rect x="308" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3332,10 +3332,10 @@
     <g id="c20r1">
       <!-- base rect -->
       <rect x="308" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3355,10 +3355,10 @@
     <g id="c20r2">
       <!-- base rect -->
       <rect x="308" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3378,10 +3378,10 @@
     <g id="c20r3">
       <!-- base rect -->
       <rect x="308" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3401,10 +3401,10 @@
     <g id="c20r4">
       <!-- base rect -->
       <rect x="308" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3424,10 +3424,10 @@
     <g id="c20r5">
       <!-- base rect -->
       <rect x="308" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3447,10 +3447,10 @@
     <g id="c20r6">
       <!-- base rect -->
       <rect x="308" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.500s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3470,10 +3470,10 @@
     <g id="c21r0">
       <!-- base rect -->
       <rect x="322" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3493,10 +3493,10 @@
     <g id="c21r1">
       <!-- base rect -->
       <rect x="322" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3516,10 +3516,10 @@
     <g id="c21r2">
       <!-- base rect -->
       <rect x="322" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3539,10 +3539,10 @@
     <g id="c21r3">
       <!-- base rect -->
       <rect x="322" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3562,10 +3562,10 @@
     <g id="c21r4">
       <!-- base rect -->
       <rect x="322" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3585,10 +3585,10 @@
     <g id="c21r5">
       <!-- base rect -->
       <rect x="322" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3608,10 +3608,10 @@
     <g id="c21r6">
       <!-- base rect -->
       <rect x="322" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.525s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3631,10 +3631,10 @@
     <g id="c22r0">
       <!-- base rect -->
       <rect x="336" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3654,10 +3654,10 @@
     <g id="c22r1">
       <!-- base rect -->
       <rect x="336" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3677,10 +3677,10 @@
     <g id="c22r2">
       <!-- base rect -->
       <rect x="336" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3700,10 +3700,10 @@
     <g id="c22r3">
       <!-- base rect -->
       <rect x="336" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3723,10 +3723,10 @@
     <g id="c22r4">
       <!-- base rect -->
       <rect x="336" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3746,10 +3746,10 @@
     <g id="c22r5">
       <!-- base rect -->
       <rect x="336" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3769,10 +3769,10 @@
     <g id="c22r6">
       <!-- base rect -->
       <rect x="336" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.550s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3792,10 +3792,10 @@
     <g id="c23r0">
       <!-- base rect -->
       <rect x="350" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3815,10 +3815,10 @@
     <g id="c23r1">
       <!-- base rect -->
       <rect x="350" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3838,10 +3838,10 @@
     <g id="c23r2">
       <!-- base rect -->
       <rect x="350" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3861,10 +3861,10 @@
     <g id="c23r3">
       <!-- base rect -->
       <rect x="350" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3884,10 +3884,10 @@
     <g id="c23r4">
       <!-- base rect -->
       <rect x="350" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3907,10 +3907,10 @@
     <g id="c23r5">
       <!-- base rect -->
       <rect x="350" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3930,10 +3930,10 @@
     <g id="c23r6">
       <!-- base rect -->
       <rect x="350" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.575s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3953,10 +3953,10 @@
     <g id="c24r0">
       <!-- base rect -->
       <rect x="364" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3976,10 +3976,10 @@
     <g id="c24r1">
       <!-- base rect -->
       <rect x="364" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -3999,10 +3999,10 @@
     <g id="c24r2">
       <!-- base rect -->
       <rect x="364" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4022,10 +4022,10 @@
     <g id="c24r3">
       <!-- base rect -->
       <rect x="364" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4045,10 +4045,10 @@
     <g id="c24r4">
       <!-- base rect -->
       <rect x="364" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4068,10 +4068,10 @@
     <g id="c24r5">
       <!-- base rect -->
       <rect x="364" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4091,10 +4091,10 @@
     <g id="c24r6">
       <!-- base rect -->
       <rect x="364" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.600s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4114,10 +4114,10 @@
     <g id="c25r0">
       <!-- base rect -->
       <rect x="378" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4137,10 +4137,10 @@
     <g id="c25r1">
       <!-- base rect -->
       <rect x="378" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4160,10 +4160,10 @@
     <g id="c25r2">
       <!-- base rect -->
       <rect x="378" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4183,10 +4183,10 @@
     <g id="c25r3">
       <!-- base rect -->
       <rect x="378" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4206,10 +4206,10 @@
     <g id="c25r4">
       <!-- base rect -->
       <rect x="378" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4229,10 +4229,10 @@
     <g id="c25r5">
       <!-- base rect -->
       <rect x="378" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4252,10 +4252,10 @@
     <g id="c25r6">
       <!-- base rect -->
       <rect x="378" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.625s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4275,10 +4275,10 @@
     <g id="c26r0">
       <!-- base rect -->
       <rect x="392" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4298,10 +4298,10 @@
     <g id="c26r1">
       <!-- base rect -->
       <rect x="392" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4321,10 +4321,10 @@
     <g id="c26r2">
       <!-- base rect -->
       <rect x="392" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4344,10 +4344,10 @@
     <g id="c26r3">
       <!-- base rect -->
       <rect x="392" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4367,10 +4367,10 @@
     <g id="c26r4">
       <!-- base rect -->
       <rect x="392" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4390,10 +4390,10 @@
     <g id="c26r5">
       <!-- base rect -->
       <rect x="392" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4413,10 +4413,10 @@
     <g id="c26r6">
       <!-- base rect -->
       <rect x="392" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.650s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4436,10 +4436,10 @@
     <g id="c27r0">
       <!-- base rect -->
       <rect x="406" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4459,10 +4459,10 @@
     <g id="c27r1">
       <!-- base rect -->
       <rect x="406" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4482,10 +4482,10 @@
     <g id="c27r2">
       <!-- base rect -->
       <rect x="406" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4505,10 +4505,10 @@
     <g id="c27r3">
       <!-- base rect -->
       <rect x="406" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4528,10 +4528,10 @@
     <g id="c27r4">
       <!-- base rect -->
       <rect x="406" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4551,10 +4551,10 @@
     <g id="c27r5">
       <!-- base rect -->
       <rect x="406" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4574,10 +4574,10 @@
     <g id="c27r6">
       <!-- base rect -->
       <rect x="406" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.675s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4597,10 +4597,10 @@
     <g id="c28r0">
       <!-- base rect -->
       <rect x="420" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4620,10 +4620,10 @@
     <g id="c28r1">
       <!-- base rect -->
       <rect x="420" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4643,10 +4643,10 @@
     <g id="c28r2">
       <!-- base rect -->
       <rect x="420" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4666,10 +4666,10 @@
     <g id="c28r3">
       <!-- base rect -->
       <rect x="420" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4689,10 +4689,10 @@
     <g id="c28r4">
       <!-- base rect -->
       <rect x="420" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4712,10 +4712,10 @@
     <g id="c28r5">
       <!-- base rect -->
       <rect x="420" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4735,10 +4735,10 @@
     <g id="c28r6">
       <!-- base rect -->
       <rect x="420" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.700s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4758,10 +4758,10 @@
     <g id="c29r0">
       <!-- base rect -->
       <rect x="434" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4781,10 +4781,10 @@
     <g id="c29r1">
       <!-- base rect -->
       <rect x="434" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4804,10 +4804,10 @@
     <g id="c29r2">
       <!-- base rect -->
       <rect x="434" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4827,10 +4827,10 @@
     <g id="c29r3">
       <!-- base rect -->
       <rect x="434" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4850,10 +4850,10 @@
     <g id="c29r4">
       <!-- base rect -->
       <rect x="434" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4873,10 +4873,10 @@
     <g id="c29r5">
       <!-- base rect -->
       <rect x="434" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4896,10 +4896,10 @@
     <g id="c29r6">
       <!-- base rect -->
       <rect x="434" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.725s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4919,10 +4919,10 @@
     <g id="c30r0">
       <!-- base rect -->
       <rect x="448" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4942,10 +4942,10 @@
     <g id="c30r1">
       <!-- base rect -->
       <rect x="448" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4965,10 +4965,10 @@
     <g id="c30r2">
       <!-- base rect -->
       <rect x="448" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -4988,10 +4988,10 @@
     <g id="c30r3">
       <!-- base rect -->
       <rect x="448" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5011,10 +5011,10 @@
     <g id="c30r4">
       <!-- base rect -->
       <rect x="448" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5034,10 +5034,10 @@
     <g id="c30r5">
       <!-- base rect -->
       <rect x="448" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5057,10 +5057,10 @@
     <g id="c30r6">
       <!-- base rect -->
       <rect x="448" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.750s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5080,10 +5080,10 @@
     <g id="c31r0">
       <!-- base rect -->
       <rect x="462" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5103,10 +5103,10 @@
     <g id="c31r1">
       <!-- base rect -->
       <rect x="462" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5126,10 +5126,10 @@
     <g id="c31r2">
       <!-- base rect -->
       <rect x="462" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5149,10 +5149,10 @@
     <g id="c31r3">
       <!-- base rect -->
       <rect x="462" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5172,10 +5172,10 @@
     <g id="c31r4">
       <!-- base rect -->
       <rect x="462" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5195,10 +5195,10 @@
     <g id="c31r5">
       <!-- base rect -->
       <rect x="462" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5218,10 +5218,10 @@
     <g id="c31r6">
       <!-- base rect -->
       <rect x="462" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.775s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5241,10 +5241,10 @@
     <g id="c32r0">
       <!-- base rect -->
       <rect x="476" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5264,10 +5264,10 @@
     <g id="c32r1">
       <!-- base rect -->
       <rect x="476" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5287,10 +5287,10 @@
     <g id="c32r2">
       <!-- base rect -->
       <rect x="476" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5310,10 +5310,10 @@
     <g id="c32r3">
       <!-- base rect -->
       <rect x="476" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5333,10 +5333,10 @@
     <g id="c32r4">
       <!-- base rect -->
       <rect x="476" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5356,10 +5356,10 @@
     <g id="c32r5">
       <!-- base rect -->
       <rect x="476" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5379,10 +5379,10 @@
     <g id="c32r6">
       <!-- base rect -->
       <rect x="476" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.800s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5402,10 +5402,10 @@
     <g id="c33r0">
       <!-- base rect -->
       <rect x="490" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5425,10 +5425,10 @@
     <g id="c33r1">
       <!-- base rect -->
       <rect x="490" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5448,10 +5448,10 @@
     <g id="c33r2">
       <!-- base rect -->
       <rect x="490" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5471,10 +5471,10 @@
     <g id="c33r3">
       <!-- base rect -->
       <rect x="490" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5494,10 +5494,10 @@
     <g id="c33r4">
       <!-- base rect -->
       <rect x="490" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5517,10 +5517,10 @@
     <g id="c33r5">
       <!-- base rect -->
       <rect x="490" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5540,10 +5540,10 @@
     <g id="c33r6">
       <!-- base rect -->
       <rect x="490" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.825s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5563,10 +5563,10 @@
     <g id="c34r0">
       <!-- base rect -->
       <rect x="504" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5586,10 +5586,10 @@
     <g id="c34r1">
       <!-- base rect -->
       <rect x="504" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5609,10 +5609,10 @@
     <g id="c34r2">
       <!-- base rect -->
       <rect x="504" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5632,10 +5632,10 @@
     <g id="c34r3">
       <!-- base rect -->
       <rect x="504" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5655,10 +5655,10 @@
     <g id="c34r4">
       <!-- base rect -->
       <rect x="504" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5678,10 +5678,10 @@
     <g id="c34r5">
       <!-- base rect -->
       <rect x="504" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5701,10 +5701,10 @@
     <g id="c34r6">
       <!-- base rect -->
       <rect x="504" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.850s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5724,10 +5724,10 @@
     <g id="c35r0">
       <!-- base rect -->
       <rect x="518" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5747,10 +5747,10 @@
     <g id="c35r1">
       <!-- base rect -->
       <rect x="518" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5770,10 +5770,10 @@
     <g id="c35r2">
       <!-- base rect -->
       <rect x="518" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5793,10 +5793,10 @@
     <g id="c35r3">
       <!-- base rect -->
       <rect x="518" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5816,10 +5816,10 @@
     <g id="c35r4">
       <!-- base rect -->
       <rect x="518" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5839,10 +5839,10 @@
     <g id="c35r5">
       <!-- base rect -->
       <rect x="518" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5862,10 +5862,10 @@
     <g id="c35r6">
       <!-- base rect -->
       <rect x="518" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.875s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5885,10 +5885,10 @@
     <g id="c36r0">
       <!-- base rect -->
       <rect x="532" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5908,10 +5908,10 @@
     <g id="c36r1">
       <!-- base rect -->
       <rect x="532" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5931,10 +5931,10 @@
     <g id="c36r2">
       <!-- base rect -->
       <rect x="532" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5954,10 +5954,10 @@
     <g id="c36r3">
       <!-- base rect -->
       <rect x="532" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -5977,10 +5977,10 @@
     <g id="c36r4">
       <!-- base rect -->
       <rect x="532" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6000,10 +6000,10 @@
     <g id="c36r5">
       <!-- base rect -->
       <rect x="532" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6023,10 +6023,10 @@
     <g id="c36r6">
       <!-- base rect -->
       <rect x="532" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.900s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6046,10 +6046,10 @@
     <g id="c37r0">
       <!-- base rect -->
       <rect x="546" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6069,10 +6069,10 @@
     <g id="c37r1">
       <!-- base rect -->
       <rect x="546" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6092,10 +6092,10 @@
     <g id="c37r2">
       <!-- base rect -->
       <rect x="546" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6115,10 +6115,10 @@
     <g id="c37r3">
       <!-- base rect -->
       <rect x="546" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6138,10 +6138,10 @@
     <g id="c37r4">
       <!-- base rect -->
       <rect x="546" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6161,10 +6161,10 @@
     <g id="c37r5">
       <!-- base rect -->
       <rect x="546" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6184,10 +6184,10 @@
     <g id="c37r6">
       <!-- base rect -->
       <rect x="546" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.925s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6207,10 +6207,10 @@
     <g id="c38r0">
       <!-- base rect -->
       <rect x="560" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6230,10 +6230,10 @@
     <g id="c38r1">
       <!-- base rect -->
       <rect x="560" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6253,10 +6253,10 @@
     <g id="c38r2">
       <!-- base rect -->
       <rect x="560" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6276,10 +6276,10 @@
     <g id="c38r3">
       <!-- base rect -->
       <rect x="560" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6299,10 +6299,10 @@
     <g id="c38r4">
       <!-- base rect -->
       <rect x="560" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6322,10 +6322,10 @@
     <g id="c38r5">
       <!-- base rect -->
       <rect x="560" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6345,10 +6345,10 @@
     <g id="c38r6">
       <!-- base rect -->
       <rect x="560" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.950s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6368,10 +6368,10 @@
     <g id="c39r0">
       <!-- base rect -->
       <rect x="574" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6391,10 +6391,10 @@
     <g id="c39r1">
       <!-- base rect -->
       <rect x="574" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6414,10 +6414,10 @@
     <g id="c39r2">
       <!-- base rect -->
       <rect x="574" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6437,10 +6437,10 @@
     <g id="c39r3">
       <!-- base rect -->
       <rect x="574" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6460,10 +6460,10 @@
     <g id="c39r4">
       <!-- base rect -->
       <rect x="574" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6483,10 +6483,10 @@
     <g id="c39r5">
       <!-- base rect -->
       <rect x="574" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6506,10 +6506,10 @@
     <g id="c39r6">
       <!-- base rect -->
       <rect x="574" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="0.975s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6539,10 +6539,10 @@
     <g id="c40r0">
       <!-- base rect -->
       <rect x="588" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6562,10 +6562,10 @@
     <g id="c40r1">
       <!-- base rect -->
       <rect x="588" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6585,10 +6585,10 @@
     <g id="c40r2">
       <!-- base rect -->
       <rect x="588" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6608,10 +6608,10 @@
     <g id="c40r3">
       <!-- base rect -->
       <rect x="588" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6631,10 +6631,10 @@
     <g id="c40r4">
       <!-- base rect -->
       <rect x="588" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6654,10 +6654,10 @@
     <g id="c40r5">
       <!-- base rect -->
       <rect x="588" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6677,10 +6677,10 @@
     <g id="c40r6">
       <!-- base rect -->
       <rect x="588" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.000s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6700,10 +6700,10 @@
     <g id="c41r0">
       <!-- base rect -->
       <rect x="602" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6723,10 +6723,10 @@
     <g id="c41r1">
       <!-- base rect -->
       <rect x="602" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6746,10 +6746,10 @@
     <g id="c41r2">
       <!-- base rect -->
       <rect x="602" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6769,10 +6769,10 @@
     <g id="c41r3">
       <!-- base rect -->
       <rect x="602" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6792,10 +6792,10 @@
     <g id="c41r4">
       <!-- base rect -->
       <rect x="602" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6815,10 +6815,10 @@
     <g id="c41r5">
       <!-- base rect -->
       <rect x="602" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6838,10 +6838,10 @@
     <g id="c41r6">
       <!-- base rect -->
       <rect x="602" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.025s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6861,10 +6861,10 @@
     <g id="c42r0">
       <!-- base rect -->
       <rect x="616" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6884,10 +6884,10 @@
     <g id="c42r1">
       <!-- base rect -->
       <rect x="616" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6907,10 +6907,10 @@
     <g id="c42r2">
       <!-- base rect -->
       <rect x="616" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6930,10 +6930,10 @@
     <g id="c42r3">
       <!-- base rect -->
       <rect x="616" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6953,10 +6953,10 @@
     <g id="c42r4">
       <!-- base rect -->
       <rect x="616" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6976,10 +6976,10 @@
     <g id="c42r5">
       <!-- base rect -->
       <rect x="616" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -6999,10 +6999,10 @@
     <g id="c42r6">
       <!-- base rect -->
       <rect x="616" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.050s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7022,10 +7022,10 @@
     <g id="c43r0">
       <!-- base rect -->
       <rect x="630" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7045,10 +7045,10 @@
     <g id="c43r1">
       <!-- base rect -->
       <rect x="630" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7068,10 +7068,10 @@
     <g id="c43r2">
       <!-- base rect -->
       <rect x="630" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7091,10 +7091,10 @@
     <g id="c43r3">
       <!-- base rect -->
       <rect x="630" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7114,10 +7114,10 @@
     <g id="c43r4">
       <!-- base rect -->
       <rect x="630" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7137,10 +7137,10 @@
     <g id="c43r5">
       <!-- base rect -->
       <rect x="630" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7160,10 +7160,10 @@
     <g id="c43r6">
       <!-- base rect -->
       <rect x="630" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.075s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7183,10 +7183,10 @@
     <g id="c44r0">
       <!-- base rect -->
       <rect x="644" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7206,10 +7206,10 @@
     <g id="c44r1">
       <!-- base rect -->
       <rect x="644" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7239,10 +7239,10 @@
     <g id="c44r2">
       <!-- base rect -->
       <rect x="644" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7272,10 +7272,10 @@
     <g id="c44r3">
       <!-- base rect -->
       <rect x="644" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7295,10 +7295,10 @@
     <g id="c44r4">
       <!-- base rect -->
       <rect x="644" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7318,10 +7318,10 @@
     <g id="c44r5">
       <!-- base rect -->
       <rect x="644" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7341,10 +7341,10 @@
     <g id="c44r6">
       <!-- base rect -->
       <rect x="644" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.100s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7364,10 +7364,10 @@
     <g id="c45r0">
       <!-- base rect -->
       <rect x="658" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7387,10 +7387,10 @@
     <g id="c45r1">
       <!-- base rect -->
       <rect x="658" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7410,10 +7410,10 @@
     <g id="c45r2">
       <!-- base rect -->
       <rect x="658" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7433,10 +7433,10 @@
     <g id="c45r3">
       <!-- base rect -->
       <rect x="658" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7456,10 +7456,10 @@
     <g id="c45r4">
       <!-- base rect -->
       <rect x="658" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7489,10 +7489,10 @@
     <g id="c45r5">
       <!-- base rect -->
       <rect x="658" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7512,10 +7512,10 @@
     <g id="c45r6">
       <!-- base rect -->
       <rect x="658" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.125s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7535,10 +7535,10 @@
     <g id="c46r0">
       <!-- base rect -->
       <rect x="672" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7568,10 +7568,10 @@
     <g id="c46r1">
       <!-- base rect -->
       <rect x="672" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7591,10 +7591,10 @@
     <g id="c46r2">
       <!-- base rect -->
       <rect x="672" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7614,10 +7614,10 @@
     <g id="c46r3">
       <!-- base rect -->
       <rect x="672" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7647,10 +7647,10 @@
     <g id="c46r4">
       <!-- base rect -->
       <rect x="672" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7680,10 +7680,10 @@
     <g id="c46r5">
       <!-- base rect -->
       <rect x="672" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7703,10 +7703,10 @@
     <g id="c46r6">
       <!-- base rect -->
       <rect x="672" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.150s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7726,10 +7726,10 @@
     <g id="c47r0">
       <!-- base rect -->
       <rect x="686" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#006d32" opacity="0">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7759,10 +7759,10 @@
     <g id="c47r1">
       <!-- base rect -->
       <rect x="686" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7792,10 +7792,10 @@
     <g id="c47r2">
       <!-- base rect -->
       <rect x="686" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)" opacity="0">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7825,10 +7825,10 @@
     <g id="c47r3">
       <!-- base rect -->
       <rect x="686" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#006d32" opacity="0">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7858,10 +7858,10 @@
     <g id="c47r4">
       <!-- base rect -->
       <rect x="686" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7891,10 +7891,10 @@
     <g id="c47r5">
       <!-- base rect -->
       <rect x="686" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7914,10 +7914,10 @@
     <g id="c47r6">
       <!-- base rect -->
       <rect x="686" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.175s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7947,10 +7947,10 @@
     <g id="c48r0">
       <!-- base rect -->
       <rect x="700" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7970,10 +7970,10 @@
     <g id="c48r1">
       <!-- base rect -->
       <rect x="700" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -7993,10 +7993,10 @@
     <g id="c48r2">
       <!-- base rect -->
       <rect x="700" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8016,10 +8016,10 @@
     <g id="c48r3">
       <!-- base rect -->
       <rect x="700" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8039,10 +8039,10 @@
     <g id="c48r4">
       <!-- base rect -->
       <rect x="700" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8062,10 +8062,10 @@
     <g id="c48r5">
       <!-- base rect -->
       <rect x="700" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8095,10 +8095,10 @@
     <g id="c48r6">
       <!-- base rect -->
       <rect x="700" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.200s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8118,10 +8118,10 @@
     <g id="c49r0">
       <!-- base rect -->
       <rect x="714" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8141,10 +8141,10 @@
     <g id="c49r1">
       <!-- base rect -->
       <rect x="714" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8164,10 +8164,10 @@
     <g id="c49r2">
       <!-- base rect -->
       <rect x="714" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8187,10 +8187,10 @@
     <g id="c49r3">
       <!-- base rect -->
       <rect x="714" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8220,10 +8220,10 @@
     <g id="c49r4">
       <!-- base rect -->
       <rect x="714" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8243,10 +8243,10 @@
     <g id="c49r5">
       <!-- base rect -->
       <rect x="714" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8266,10 +8266,10 @@
     <g id="c49r6">
       <!-- base rect -->
       <rect x="714" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.225s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8299,10 +8299,10 @@
     <g id="c50r0">
       <!-- base rect -->
       <rect x="728" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8332,10 +8332,10 @@
     <g id="c50r1">
       <!-- base rect -->
       <rect x="728" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8365,10 +8365,10 @@
     <g id="c50r2">
       <!-- base rect -->
       <rect x="728" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8388,10 +8388,10 @@
     <g id="c50r3">
       <!-- base rect -->
       <rect x="728" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8411,10 +8411,10 @@
     <g id="c50r4">
       <!-- base rect -->
       <rect x="728" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8444,10 +8444,10 @@
     <g id="c50r5">
       <!-- base rect -->
       <rect x="728" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)" opacity="0">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8477,10 +8477,10 @@
     <g id="c50r6">
       <!-- base rect -->
       <rect x="728" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#006d32" opacity="0">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.250s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8510,10 +8510,10 @@
     <g id="c51r0">
       <!-- base rect -->
       <rect x="742" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8533,10 +8533,10 @@
     <g id="c51r1">
       <!-- base rect -->
       <rect x="742" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8566,10 +8566,10 @@
     <g id="c51r2">
       <!-- base rect -->
       <rect x="742" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8599,10 +8599,10 @@
     <g id="c51r3">
       <!-- base rect -->
       <rect x="742" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)" opacity="0">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8632,10 +8632,10 @@
     <g id="c51r4">
       <!-- base rect -->
       <rect x="742" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8665,10 +8665,10 @@
     <g id="c51r5">
       <!-- base rect -->
       <rect x="742" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8698,10 +8698,10 @@
     <g id="c51r6">
       <!-- base rect -->
       <rect x="742" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429" opacity="0">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.275s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8731,10 +8731,10 @@
     <g id="c52r0">
       <!-- base rect -->
       <rect x="756" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.450s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8754,10 +8754,10 @@
     <g id="c52r1">
       <!-- base rect -->
       <rect x="756" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.425s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8777,10 +8777,10 @@
     <g id="c52r2">
       <!-- base rect -->
       <rect x="756" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.400s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8796,14 +8796,24 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="756" y="80" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.700s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c52r3">
       <!-- base rect -->
       <rect x="756" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.375s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8823,10 +8833,10 @@
     <g id="c52r4">
       <!-- base rect -->
       <rect x="756" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.350s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8846,10 +8856,10 @@
     <g id="c52r5">
       <!-- base rect -->
       <rect x="756" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.325s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8869,10 +8879,10 @@
     <g id="c52r6">
       <!-- base rect -->
       <rect x="756" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)" opacity="0">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
-                 from="0" to="1"
+                 values="0;1"
                  begin="1.300s" dur="0.300s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.25 0 0.25 1" keyTimes="0;1"/>
@@ -8887,16 +8897,6 @@
                  begin="1.300s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="756" y="136" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.600s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
   <text x="648" y="161" font-family="'Courier New', Courier, monospace" font-size="7" fill="#8b949e" text-anchor="end">Less</text>
