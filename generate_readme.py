@@ -4,10 +4,9 @@ generate_readme.py
 Injects the three SVG cards into README.md using HTML comment markers.
 
   Layout:
-    ┌─────────────────────────────────────┐
-    │  terminal-card  │   info-card       │
-    └─────────────────────────────────────┘
-         github-contribution-animation
+    1. terminal-card.svg (centered, max width ~600)
+    2. info-card.svg     (centered, full 2-column neofetch width 820)
+    3. contribution graph (centered, full width 900)
 """
 
 import os
@@ -41,17 +40,16 @@ def _build_injection(
 
     return (
         f"{MARKER_START}\n"
-        '<p align="center">\n'
-        "<table>\n"
-        "<tr>\n"
-        f'<td><img src="{tc}" width="520"/></td>\n'
-        f'<td><img src="{ic}" width="340"/></td>\n'
-        "</tr>\n"
-        "</table>\n"
-        "</p>\n\n"
-        '<p align="center">\n'
-        f'  <img src="{cc}" width="900"/>\n'
-        "</p>\n"
+        '<div align="center">\n\n'
+        '<!-- Terminal ASCII Portrait -->\n'
+        f'<img src="{tc}" alt="Terminal ASCII Portrait" width="600"/>\n'
+        '<br/><br/>\n\n'
+        '<!-- Neofetch Info Card -->\n'
+        f'<img src="{ic}" alt="Neofetch Info Card" width="820"/>\n'
+        '<br/><br/>\n\n'
+        '<!-- Contribution Graph -->\n'
+        f'<img src="{cc}" alt="GitHub Contribution Graph" width="900"/>\n\n'
+        '</div>\n'
         f"{MARKER_END}"
     )
 
@@ -70,13 +68,13 @@ def inject(
     else:
         content = _default_readme()
 
-    # First, strip legacy markers if present to avoid duplication
+    # Strip legacy markers if present to avoid duplication
     if LEGACY_START in content and LEGACY_END in content:
         before_legacy = content[:content.index(LEGACY_START)]
         after_legacy = content[content.index(LEGACY_END) + len(LEGACY_END):]
         content = (before_legacy.strip() + "\n\n" + after_legacy.strip()).strip()
 
-    # Next, inject or replace inside GITHUB-ASSETS markers
+    # Inject or replace inside GITHUB-ASSETS markers
     if MARKER_START in content and MARKER_END in content:
         before = content[:content.index(MARKER_START)]
         after  = content[content.index(MARKER_END) + len(MARKER_END):]
