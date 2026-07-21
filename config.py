@@ -12,22 +12,21 @@ DISPLAY_NAME = "Khushal Singh Sankhla"
 # ──────────────────────────────────────────────────────────────────────────────
 # Info Card Content
 # ──────────────────────────────────────────────────────────────────────────────
-ABOUT_LINE   = "Full-Stack Dev · Open Source · Cyberpunk Aesthete"
-LOCATION     = "Rajasthan, India"
+ABOUT_LINE   = "MCA @ JECRC | Data Analytics & AI Developer"
+LOCATION     = "Jodhpur, Rajasthan, India"
 STACK        = [
-    "Python",
-    "TypeScript",
-    "React / Next.js",
-    "FastAPI",
-    "Docker",
-    "PostgreSQL",
-    "Git / GitHub Actions",
+    "Power BI / DAX / Fabric",
+    "Python / SQL / C++",
+    "PostgreSQL / MongoDB",
+    "React / Node.js / Express",
+    "Pandas / NumPy / Seaborn",
+    "AI (Claude / Gemini / DeepSeek)",
 ]
 HIGHLIGHTS   = [
-    "500+ Contributions",
-    "10+ Open Source Projects",
-    "3+ Years of Coding",
-    "CI/CD Enthusiast",
+    "CGPA: 8.65/10 @ JECRC",
+    "8+ Analytics & AI Projects",
+    "Microsoft Certified Power BI",
+    "Cisco Data Analytics Certified",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
