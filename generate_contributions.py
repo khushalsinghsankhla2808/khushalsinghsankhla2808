@@ -83,25 +83,34 @@ def _fetch_github_html(username: str) -> list[list[int]]:
     resp = requests.get(url, headers=headers, timeout=10)
     resp.raise_for_status()
 
-    matches = re.findall(r'data-level="([0-4])"', resp.text)
+    # Extract id="contribution-day-component-ROW-COL" and data-level="LEVEL"
+    matches = re.findall(
+        r'id=["\']contribution-day-component-(\d+)-(\d+)["\'][^>]*data-level=["\']([0-4])["\']',
+        resp.text
+    )
+
     if not matches:
-        raise ValueError("No data-level elements found in contribution HTML")
+        # Fallback attribute ordering search
+        matches = re.findall(
+            r'data-level=["\']([0-4])["\'][^>]*id=["\']contribution-day-component-(\d+)-(\d+)["\']',
+            resp.text
+        )
+        if matches:
+            matches = [(m[1], m[2], m[0]) for m in matches]
 
-    levels = [int(m) for m in matches]
-    grid = []
-    current_col = []
-    for lvl in levels:
-        current_col.append(lvl)
-        if len(current_col) == DAYS:
-            grid.append(current_col)
-            current_col = []
-    if current_col:
-        while len(current_col) < DAYS:
-            current_col.append(0)
-        grid.append(current_col)
+    if not matches:
+        raise ValueError("Could not parse contribution day components from GitHub HTML")
 
-    while len(grid) < WEEKS:
-        grid.insert(0, [0] * DAYS)
+    max_col = max(int(m[1]) for m in matches)
+    num_cols = max(WEEKS, max_col + 1)
+    grid = [[0] * DAYS for _ in range(num_cols)]
+
+    for row_str, col_str, lvl_str in matches:
+        r = int(row_str)
+        c = int(col_str)
+        lvl = int(lvl_str)
+        if r < DAYS and c < num_cols:
+            grid[c][r] = lvl
 
     return grid[-WEEKS:]
 
