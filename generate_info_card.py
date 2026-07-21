@@ -1,287 +1,25 @@
 """
 generate_info_card.py
 ─────────────────────
-Generates `info-card.svg`:
-  • Neofetch-style card with macOS window chrome (matching terminal-card)
-  • Sections: OS, Shell, About, Stack, Highlights
-  • Each line slides up + fades in with 0.06s staggered SMIL delay
-  • Decorative rotating ASCII logo in top-right area
-  • Breathing neon vertical accent bar on the left
+Generates a redesigned, premium 2-column NeoFetch terminal SVG (`info-card.svg`):
+  • 2-column layout matching the user's latest resume
+  • Left column: Header (animated typing name), System Info, About & Focus, Highlights
+  • Right column: Tech Stack (categorized with emojis), Featured Projects (clickable with hover glow), Certifications
+  • Unified bottom footer: Currently Building and Always Learning banner
+  • CSS-based interactive animations: Animated gradient border, pulsing status, name typing, section headers glow
 
 Run:  python generate_info_card.py
 """
 
 import argparse
-import math
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from config import (
-    PALETTE, OUT_INFO, ANIM, USERNAME, DISPLAY_NAME,
-    ABOUT_LINE, LOCATION, STACK, HIGHLIGHTS
-)
+from config import PALETTE, OUT_INFO, USERNAME, DISPLAY_NAME
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Card dimensions
-# ──────────────────────────────────────────────────────────────────────────────
-TITLE_BAR_H = 36
-PADDING_X   = 22
-PADDING_Y   = 18
-SVG_W       = 390
-FONT_SIZE   = 11
-LINE_H      = 19     # pixels between lines
-CHAR_W      = 7.2    # approximate monospace advance
-
-# Compute SVG height from content
-LOGO_LINES  = 8      # ASCII logo in header area (inside content)
-
-# Build all content lines ahead of time so we know the height
-def _build_lines() -> list[tuple[str, str, str]]:
-    """
-    Returns list of (prefix, key, value) tuples + colors.
-    Each tuple is (label_color, value_color, full_text).
-    """
-    lines: list[tuple[str, str]] = []   # (color, text)
-
-    # Identity block
-    lines.append((PALETTE["cyan"],   f"╭── {DISPLAY_NAME}"))
-    lines.append((PALETTE["muted"],  f"│   {USERNAME}@github"))
-    lines.append((PALETTE["border"], "╰" + "─" * 30))
-    lines.append(("",                ""))  # spacer
-
-    # System info
-    lines.append((PALETTE["orange"], "OS          " + "GitHub · Linux 6.x"))
-    lines.append((PALETTE["green"],  "Shell       " + "zsh + oh-my-zsh"))
-    lines.append((PALETTE["blue"],   "Location    " + LOCATION))
-    lines.append((PALETTE["purple"], "Status      " + "🟢  Open to collaborate"))
-    lines.append(("",                ""))  # spacer
-
-    # About
-    lines.append((PALETTE["yellow"], "About"))
-    lines.append((PALETTE["text"],   "  " + ABOUT_LINE))
-    lines.append(("",                ""))  # spacer
-
-    # Stack
-    lines.append((PALETTE["blue"],   "Stack"))
-    for s in STACK:
-        lines.append((PALETTE["text"], f"  ▸ {s}"))
-    lines.append(("",                ""))  # spacer
-
-    # Highlights
-    lines.append((PALETTE["purple"], "Highlights"))
-    for h in HIGHLIGHTS:
-        lines.append((PALETTE["cyan"], f"  ★ {h}"))
-
-    return lines
-
-
-CONTENT_LINES = _build_lines()
-CONTENT_H_INNER = len(CONTENT_LINES) * LINE_H + PADDING_Y * 2
-SVG_H = TITLE_BAR_H + CONTENT_H_INNER + 4   # +4 for outer margin
-
-
-# ──────────────────────────────────────────────────────────────────────────────
-# SVG builders
-# ──────────────────────────────────────────────────────────────────────────────
-
-def _defs_block() -> str:
-    return f"""  <defs>
-    <!-- Card glass gradient -->
-    <linearGradient id="info-bg-grad" x1="0%" y1="0%" x2="10%" y2="100%">
-      <stop offset="0%"   stop-color="#1a2332" stop-opacity="0.98"/>
-      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.99"/>
-    </linearGradient>
-
-    <!-- Title bar gradient -->
-    <linearGradient id="info-titlebar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#2d333b"/>
-      <stop offset="100%" stop-color="#22272e"/>
-    </linearGradient>
-
-    <!-- Outer neon glow shadow -->
-    <filter id="info-card-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
-      <feFlood flood-color="{PALETTE['purple']}" flood-opacity="0.22" result="color"/>
-      <feComposite in="color" in2="blur" operator="in" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Accent bar gradient -->
-    <linearGradient id="accent-bar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="{PALETTE['cyan']}"/>
-      <stop offset="50%"  stop-color="{PALETTE['purple']}"/>
-      <stop offset="100%" stop-color="{PALETTE['green']}"/>
-    </linearGradient>
-
-    <!-- Clip path for text lines (slide-up) -->
-    <clipPath id="line-clip">
-      <rect x="0" y="0" width="{SVG_W}" height="{SVG_H}"/>
-    </clipPath>
-
-    <!-- Scan-line texture -->
-    <pattern id="info-scanlines" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
-      <rect width="1" height="1" fill="rgba(0,0,0,0.28)"/>
-    </pattern>
-
-    <!-- Glow for accent elements -->
-    <filter id="accent-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>"""
-
-
-def _window_chrome() -> str:
-    bx = 2
-    by = 2
-    w  = SVG_W - 4
-    h  = SVG_H - 4
-    tbh = TITLE_BAR_H
-    r   = 10
-
-    btn_y  = by + tbh // 2
-    btn_r  = 6
-    btn_gap = 20
-    btn1_x = bx + 22
-    btn2_x = btn1_x + btn_gap
-    btn3_x = btn2_x + btn_gap
-
-    return f"""  <!-- Window frame -->
-  <rect x="{bx}" y="{by}" width="{w}" height="{h}" rx="{r}" ry="{r}"
-        fill="url(#info-bg-grad)" filter="url(#info-card-shadow)"/>
-  <rect x="{bx}" y="{by}" width="{w}" height="{h}" rx="{r}" ry="{r}"
-        fill="none" stroke="{PALETTE['border']}" stroke-width="1" opacity="0.9"/>
-
-  <!-- Title bar -->
-  <rect x="{bx}" y="{by}" width="{w}" height="{tbh}" rx="{r}" ry="{r}"
-        fill="url(#info-titlebar-grad)"/>
-  <rect x="{bx}" y="{by + tbh - r}" width="{w}" height="{r}" fill="#22272e"/>
-  <line x1="{bx}" y1="{by + tbh}" x2="{bx + w}" y2="{by + tbh}"
-        stroke="{PALETTE['border']}" stroke-width="1" opacity="0.6"/>
-
-  <!-- Traffic lights -->
-  <circle cx="{btn1_x}" cy="{btn_y}" r="{btn_r}" fill="{PALETTE['red']}">
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="{btn2_x}" cy="{btn_y}" r="{btn_r}" fill="{PALETTE['yellow']}">
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="0.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="{btn3_x}" cy="{btn_y}" r="{btn_r}" fill="{PALETTE['green']}">
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="1s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Title -->
-  <text x="{bx + w // 2}" y="{by + tbh // 2 + 5}"
-        font-family="'SF Mono', 'Courier New', Courier, monospace"
-        font-size="11" fill="{PALETTE['muted']}" text-anchor="middle">
-    neofetch — {USERNAME}
-  </text>"""
-
-
-def _accent_bar() -> str:
-    """Breathing neon vertical bar on the left edge."""
-    bx = 2 + PADDING_X - 10
-    by = 2 + TITLE_BAR_H + PADDING_Y
-    bh = len(CONTENT_LINES) * LINE_H
-    bw = 3
-    r  = 2
-
-    return f"""  <!-- Left accent bar -->
-  <rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="{r}"
-        fill="url(#accent-bar-grad)" filter="url(#accent-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
-    <!-- Subtle color-cycle via gradients – simulate by animating opacity -->
-  </rect>"""
-
-
-def _ascii_logo_corner() -> str:
-    """Small rotating neon logo in top-right of content area."""
-    # A tiny lambda / code symbol made from ASCII
-    logo_chars = [
-        "  /\\  ",
-        " /  \\ ",
-        "/ λ  \\",
-        "‾‾‾‾‾‾",
-    ]
-    logo_x = SVG_W - 2 - PADDING_X - 50
-    logo_y = 2 + TITLE_BAR_H + PADDING_Y + 4
-    lh = 13
-    lfs = 9
-
-    parts = [f"""  <!-- ASCII logo corner -->
-  <g transform-origin="{logo_x + 25} {logo_y + 25}">
-    <animateTransform attributeName="transform" type="rotate"
-                      from="0 {logo_x + 25} {logo_y + 26}"
-                      to="360 {logo_x + 25} {logo_y + 26}"
-                      dur="12s" repeatCount="indefinite"/>"""]
-
-    for i, row in enumerate(logo_chars):
-        cy = logo_y + i * lh + lh
-        color = [PALETTE["cyan"], PALETTE["purple"], PALETTE["green"], PALETTE["blue"]][i % 4]
-        parts.append(
-            f'    <text x="{logo_x}" y="{cy}" '
-            f'font-family="\'SF Mono\', \'Courier New\', Courier, monospace" '
-            f'font-size="{lfs}" fill="{color}" opacity="0.7" xml:space="preserve">'
-            f'{_escape_svg(row)}</text>'
-        )
-    parts.append("  </g>")
-    return "\n".join(parts)
-
-
-def _content_lines_svg() -> str:
-    """Staggered slide-up + fade-in for each neofetch line."""
-    base_x = 2 + PADDING_X
-    base_y = 2 + TITLE_BAR_H + PADDING_Y
-
-    parts = []
-    for i, (color, text) in enumerate(CONTENT_LINES):
-        if not text:
-            continue  # pure spacer — no element needed
-
-        line_y = base_y + i * LINE_H + LINE_H
-        t_start = i * ANIM["info_line_stagger"]
-        dur = ANIM["info_slide_dur"]
-
-        def ft(t: float) -> str:
-            return f"{t:.3f}s"
-
-        # Wrapper group with slide-up transform + fade
-        parts.append(f"""  <!-- Line {i} -->
-  <g opacity="0">
-    <animate attributeName="opacity"
-             from="0" to="1"
-             begin="{ft(t_start)}" dur="{ft(dur)}"
-             fill="freeze" calcMode="spline"
-             keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
-    <animateTransform attributeName="transform"
-                      type="translate"
-                      from="0,12" to="0,0"
-                      begin="{ft(t_start)}" dur="{ft(dur)}"
-                      fill="freeze" calcMode="spline"
-                      keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-    <text x="{base_x}" y="{line_y}"
-          font-family="'SF Mono', 'Courier New', Courier, monospace"
-          font-size="{FONT_SIZE}" fill="{color if color else PALETTE['text']}"
-          xml:space="preserve">{_escape_svg(text)}</text>
-  </g>""")
-
-    return "\n".join(parts)
-
-
-def _scanline_overlay() -> str:
-    return (
-        f'  <rect x="2" y="{2 + TITLE_BAR_H}" '
-        f'width="{SVG_W - 4}" height="{SVG_H - 2 - TITLE_BAR_H}" '
-        f'fill="url(#info-scanlines)" opacity="0.12" pointer-events="none" rx="4"/>'
-    )
-
+SVG_W = 820
+SVG_H = 610
 
 def _escape_svg(text: str) -> str:
     return (
@@ -291,58 +29,351 @@ def _escape_svg(text: str) -> str:
             .replace('"', "&quot;")
     )
 
-
-# ──────────────────────────────────────────────────────────────────────────────
-# Main generator
-# ──────────────────────────────────────────────────────────────────────────────
-
 def generate(output_path: str = OUT_INFO) -> None:
-    parts: list[str] = []
+    parts = []
 
+    # SVG root
     parts.append(f"""<svg xmlns="http://www.w3.org/2000/svg"
      width="{SVG_W}" height="{SVG_H}"
      viewBox="0 0 {SVG_W} {SVG_H}"
-     role="img" aria-label="Neofetch Info Card — {USERNAME}">""")
+     role="img" aria-label="NeoFetch Terminal Info Card — {DISPLAY_NAME}">""")
 
-    parts.append(_defs_block())
+    # Defs: filters, gradients, scanline pattern
+    parts.append(f"""  <defs>
+    <!-- Card glass background gradient -->
+    <linearGradient id="info-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#121824" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0.98"/>
+    </linearGradient>
 
-    # Outer background
-    parts.append(
-        f'  <rect width="{SVG_W}" height="{SVG_H}" '
-        f'fill="{PALETTE["bg"]}" rx="12"/>'
-    )
+    <!-- Animated neon border gradient -->
+    <linearGradient id="border-glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{PALETTE['cyan']}">
+        <animate attributeName="stop-color" values="{PALETTE['cyan']};{PALETTE['purple']};{PALETTE['green']};{PALETTE['orange']};{PALETTE['cyan']}" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="{PALETTE['purple']}">
+        <animate attributeName="stop-color" values="{PALETTE['purple']};{PALETTE['green']};{PALETTE['orange']};{PALETTE['cyan']};{PALETTE['purple']}" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="{PALETTE['green']}">
+        <animate attributeName="stop-color" values="{PALETTE['green']};{PALETTE['orange']};{PALETTE['cyan']};{PALETTE['purple']};{PALETTE['green']}" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
 
-    # Window chrome
-    parts.append(_window_chrome())
+    <!-- Title bar gradient -->
+    <linearGradient id="info-titlebar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#22272e"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
 
-    # Left accent bar
-    parts.append(_accent_bar())
+    <!-- Outer drop shadow glow -->
+    <filter id="info-card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/>
+      <feFlood flood-color="{PALETTE['purple']}" flood-opacity="0.25" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-    # Rotating logo
-    parts.append(_ascii_logo_corner())
+    <!-- Scan-line texture -->
+    <pattern id="info-scanlines" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="rgba(0,0,0,0.22)"/>
+    </pattern>
 
-    # Content lines
-    parts.append(_content_lines_svg())
+    <!-- Text glow filter -->
+    <filter id="text-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-    # Scan-line texture
-    parts.append(_scanline_overlay())
+    <!-- Name typing animation clipPath -->
+    <clipPath id="name-clip">
+      <rect x="30" y="50" width="0" height="30">
+        <animate attributeName="width" from="0" to="340" dur="1.8s" fill="freeze" begin="0.2s"
+                 calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+      </rect>
+    </clipPath>
+  </defs>""")
 
-    parts.append("</svg>")
+    # Stylesheet for transitions, fonts, and interactive states
+    # We embed standard Google Font 'Fira Code' or fallback monospace
+    parts.append(f"""  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
+    
+    .terminal-text {{
+      font-family: 'Fira Code', 'SF Mono', 'Courier New', Courier, monospace;
+      font-size: 11px;
+      fill: {PALETTE['text']};
+    }}
+    .name-title {{
+      font-family: 'Fira Code', 'SF Mono', 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: 700;
+      fill: {PALETTE['cyan']};
+    }}
+    .subtitle {{
+      font-family: 'Fira Code', 'SF Mono', 'Courier New', Courier, monospace;
+      font-size: 10px;
+      fill: {PALETTE['muted']};
+    }}
+    .section-title {{
+      font-family: 'Fira Code', 'SF Mono', 'Courier New', Courier, monospace;
+      font-size: 12px;
+      font-weight: 700;
+      fill: {PALETTE['yellow']};
+      filter: url(#text-glow);
+    }}
+    .label {{
+      font-weight: 700;
+      fill: {PALETTE['orange']};
+    }}
+    .project-link {{
+      text-decoration: none;
+    }}
+    .project-title {{
+      font-weight: 700;
+      fill: {PALETTE['blue']};
+      cursor: pointer;
+      transition: fill 0.2s, filter 0.2s;
+    }}
+    .project-link:hover .project-title {{
+      fill: {PALETTE['cyan']};
+      filter: url(#text-glow);
+    }}
+    .banner-label {{
+      font-weight: 700;
+      fill: {PALETTE['purple']};
+    }}
+  </style>""")
+
+    # Outer Glass Box and Title Bar
+    parts.append(f"""  <!-- Outer background and glass blur -->
+  <rect x="2" y="2" width="{SVG_W - 4}" height="{SVG_H - 4}" rx="12"
+        fill="url(#info-bg-grad)" stroke="url(#border-glow-grad)" stroke-width="2.5"
+        filter="url(#info-card-shadow)"/>
+
+  <!-- Title bar chrome -->
+  <rect x="3" y="3" width="{SVG_W - 6}" height="32" rx="9" fill="url(#info-titlebar-grad)"/>
+  <rect x="3" y="25" width="{SVG_W - 6}" height="10" fill="#161b22"/>
+  <line x1="3" y1="35" x2="{SVG_W - 3}" y2="35" stroke="{PALETTE['border']}" stroke-width="1" opacity="0.6"/>
+
+  <!-- Window buttons -->
+  <circle cx="20" cy="18" r="6" fill="{PALETTE['red']}"/>
+  <circle cx="40" cy="18" r="6" fill="{PALETTE['yellow']}"/>
+  <circle cx="60" cy="18" r="6" fill="{PALETTE['green']}"/>
+
+  <!-- Title text -->
+  <text x="{SVG_W // 2}" y="22" class="terminal-text" fill="{PALETTE['muted']}" text-anchor="middle" font-size="11">
+    neofetch — {USERNAME}@github
+  </text>""")
+
+    # ============================================================================
+    # LEFT COLUMN
+    # ============================================================================
+    left_x = 30
+    
+    parts.append(f"""  <!-- ================= LEFT COLUMN ================= -->
+  <!-- Header identity -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.4s" fill="freeze"/>
+    <text x="{left_x}" y="70" class="name-title" clip-path="url(#name-clip)">{DISPLAY_NAME}</text>
+    <text x="{left_x}" y="92" class="subtitle">{_escape_svg("Data Analytics • Business Intelligence • AI Developer")}</text>
+    <text x="{left_x}" y="110" class="terminal-text" fill="{PALETTE['muted']}">
+      📂 github.com/{USERNAME}
+    </text>
+    
+    <!-- Typing cursor block -->
+    <rect x="{left_x}" y="53" width="8" height="19" fill="{PALETTE['cyan']}" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.01s" fill="freeze"/>
+      <animate attributeName="x" from="{left_x}" to="{left_x + 230}" begin="0.2s" dur="1.8s" fill="freeze"
+               calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="2.0s" repeatCount="indefinite"/>
+    </rect>
+    
+    <line x1="{left_x}" y1="125" x2="380" y2="125" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.5"/>
+  </g>""")
+
+    # System Information Section
+    parts.append(f"""  <!-- System Info -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.4s" fill="freeze"/>
+    <text x="{left_x}" y="150" class="section-title">╭─ 🖥️ System Information</text>
+    
+    <!-- OS -->
+    <text x="{left_x + 10}" y="174" class="terminal-text"><tspan class="label">OS      </tspan> GitHub • Linux 6.x</text>
+    <!-- Shell -->
+    <text x="{left_x + 10}" y="194" class="terminal-text"><tspan class="label">Shell   </tspan> zsh + oh-my-zsh</text>
+    <!-- Location -->
+    <text x="{left_x + 10}" y="214" class="terminal-text"><tspan class="label">Location</tspan> Jodhpur, Rajasthan, India</text>
+    <!-- Status -->
+    <text x="{left_x + 10}" y="234" class="terminal-text"><tspan class="label">Status  </tspan>   Open to Data Analytics Opportunities</text>
+    
+    <!-- Pulsing Status Circle -->
+    <g transform="translate({left_x + 72}, 230.5)">
+      <circle cx="0" cy="0" r="4" fill="{PALETTE['green']}"/>
+      <circle cx="0" cy="0" r="4" fill="none" stroke="{PALETTE['green']}" stroke-width="1.5">
+        <animate attributeName="r" values="4;9;4" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>""")
+
+    # About & Focus Section
+    parts.append(f"""  <!-- About & Focus -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.4s" fill="freeze"/>
+    <text x="{left_x}" y="270" class="section-title">╭─ 🎓 About &amp; Focus</text>
+    
+    <text x="{left_x + 10}" y="294" class="terminal-text"><tspan class="label">Program </tspan> MCA @ JECRC University</text>
+    <text x="{left_x + 10}" y="314" class="terminal-text"><tspan class="label">CGPA    </tspan> 8.65 / 10</text>
+    <text x="{left_x + 10}" y="334" class="terminal-text"><tspan class="label">Focus On</tspan> • Data Analytics</text>
+    <text x="{left_x + 68}" y="354" class="terminal-text">• Business Intelligence</text>
+    <text x="{left_x + 68}" y="374" class="terminal-text">• SQL Development</text>
+    <text x="{left_x + 68}" y="394" class="terminal-text">• Data Engineering &amp; AI Applications</text>
+  </g>""")
+
+    # Highlights Section
+    parts.append(f"""  <!-- Highlights -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.4s" fill="freeze"/>
+    <text x="{left_x}" y="430" class="section-title">╭─ 🏆 Highlights</text>
+    
+    <text x="{left_x + 10}" y="454" class="terminal-text" fill="{PALETTE['cyan']}">★ CGPA 8.65 / 10</text>
+    <text x="{left_x + 10}" y="474" class="terminal-text" fill="{PALETTE['cyan']}">★ 8+ Analytics &amp; AI Projects</text>
+    <text x="{left_x + 10}" y="494" class="terminal-text" fill="{PALETTE['cyan']}">★ Microsoft Power BI Certified</text>
+    <text x="{left_x + 10}" y="514" class="terminal-text" fill="{PALETTE['cyan']}">★ Microsoft Fabric Certified</text>
+    <text x="{left_x + 10}" y="534" class="terminal-text" fill="{PALETTE['cyan']}">★ Cisco Data Analytics Certified</text>
+  </g>""")
+
+    # ============================================================================
+    # RIGHT COLUMN
+    # ============================================================================
+    right_x = 425
+
+    parts.append(f"""  <!-- ================= RIGHT COLUMN ================= -->
+  <!-- Tech Stack -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="0.4s" fill="freeze"/>
+    <text x="{right_x}" y="70" class="section-title">╭─ 🛠️ Tech Stack</text>
+    
+    <!-- Languages -->
+    <text x="{right_x + 10}" y="94" class="terminal-text">
+      <tspan class="label">Languages: </tspan> 🐍 Python  🗄️ SQL  ⚛️ JS  ☕ Java  💻 C++
+    </text>
+    <!-- BI -->
+    <text x="{right_x + 10}" y="114" class="terminal-text">
+      <tspan class="label">BI Tools:  </tspan> 📊 Power BI  📈 DAX  🔄 Query M  📦 Fabric
+    </text>
+    <!-- Databases -->
+    <text x="{right_x + 10}" y="134" class="terminal-text">
+      <tspan class="label">Databases: </tspan> 🐘 PostgreSQL  🐬 MySQL  🍃 MongoDB
+    </text>
+    <!-- Analytics -->
+    <text x="{right_x + 10}" y="154" class="terminal-text">
+      <tspan class="label">Analytics: </tspan> 🐼 Pandas  🔢 NumPy  📉 Matplotlib / Seaborn
+    </text>
+    <!-- Web -->
+    <text x="{right_x + 10}" y="174" class="terminal-text">
+      <tspan class="label">Web:       </tspan> ⚛️ React  🟢 Node.js  ⚡ Express.js
+    </text>
+    <!-- Dev Tools -->
+    <text x="{right_x + 10}" y="194" class="terminal-text">
+      <tspan class="label">Dev Tools: </tspan> 🔧 Git/GitHub  📝 VS Code  🛠️ Vercel / Render
+    </text>
+    <!-- AI Tools -->
+    <text x="{right_x + 10}" y="214" class="terminal-text">
+      <tspan class="label">AI Tools:  </tspan> 🧠 Claude AI  ✨ Gemini Flash  🛸 Antigravity
+    </text>
+  </g>""")
+
+    # Featured Projects Section (Clickable)
+    parts.append(f"""  <!-- Featured Projects -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.8s" dur="0.4s" fill="freeze"/>
+    <text x="{right_x}" y="250" class="section-title">╭─ 📂 Featured Projects</text>
+    
+    <!-- Project 1 -->
+    <a href="https://github.com/{USERNAME}/Velora-AI" target="_blank" class="project-link">
+      <text x="{right_x + 10}" y="274" class="terminal-text project-title">🚀 Velora AI</text>
+    </a>
+    <text x="{right_x + 20}" y="290" class="terminal-text" fill="{PALETTE['muted']}">
+      • MERN &amp; AI (Gemini/DeepSeek) Website Builder
+    </text>
+
+    <!-- Project 2 -->
+    <a href="https://github.com/{USERNAME}/Samsung-Supply-Chain" target="_blank" class="project-link">
+      <text x="{right_x + 10}" y="314" class="terminal-text project-title">📦 Samsung Supply Chain Dashboard</text>
+    </a>
+    <text x="{right_x + 20}" y="330" class="terminal-text" fill="{PALETTE['muted']}">
+      • Power BI Dashboard with Star Schema &amp; KPI Analytics
+    </text>
+
+    <!-- Project 3 -->
+    <a href="https://github.com/{USERNAME}/Spotify-Analytics" target="_blank" class="project-link">
+      <text x="{right_x + 10}" y="354" class="terminal-text project-title">🎵 Spotify Analytics Dashboard</text>
+    </a>
+    <text x="{right_x + 20}" y="370" class="terminal-text" fill="{PALETTE['muted']}">
+      • Music analytics using DAX &amp; Power Query M
+    </text>
+
+    <!-- Project 4 -->
+    <a href="https://github.com/{USERNAME}/Swiggy-vs-Zomato-SQL" target="_blank" class="project-link">
+      <text x="{right_x + 10}" y="394" class="terminal-text project-title">🍔 Swiggy vs Zomato SQL Analysis</text>
+    </a>
+    <text x="{right_x + 20}" y="410" class="terminal-text" fill="{PALETTE['muted']}">
+      • Advanced PostgreSQL analytics with Power BI
+    </text>
+  </g>""")
+
+    # Certifications Section
+    parts.append(f"""  <!-- Certifications -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="1.1s" dur="0.4s" fill="freeze"/>
+    <text x="{right_x}" y="445" class="section-title">╭─ 🎓 Certifications</text>
+    
+    <text x="{right_x + 10}" y="469" class="terminal-text">✓ Microsoft Power BI Certified (Microsoft Learn)</text>
+    <text x="{right_x + 10}" y="489" class="terminal-text">✓ Microsoft Fabric Environment (Microsoft Learn)</text>
+    <text x="{right_x + 10}" y="509" class="terminal-text">✓ Cisco Data Analytics Essentials (Cisco NetAcad)</text>
+  </g>""")
+
+    # ============================================================================
+    # BOTTOM FOOTER BANNER
+    # ============================================================================
+    parts.append(f"""  <!-- Bottom Banner / Footer -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="1.4s" dur="0.4s" fill="freeze"/>
+    
+    <line x1="{left_x}" y1="550" x2="{SVG_W - left_x}" y2="550" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.5"/>
+    
+    <!-- Currently Building -->
+    <text x="{left_x}" y="572" class="terminal-text">
+      <tspan class="banner-label">Currently Building: </tspan>
+      AI Analytics Platform • Interactive BI Dashboards • Data Engineering &amp; Open Source
+    </text>
+    
+    <!-- Always Learning -->
+    <text x="{left_x}" y="590" class="terminal-text">
+      <tspan class="banner-label">Always Learning:    </tspan>
+      Data Analytics • Business Intelligence • Machine Learning • Cloud Data • AI Dev
+    </text>
+  </g>""")
+
+    # Scanlines Overlay
+    parts.append(f"""  <!-- Scanline texture overlay -->
+  <rect x="3" y="3" width="{SVG_W - 6}" height="{SVG_H - 6}" rx="10" fill="url(#info-scanlines)" opacity="0.1" pointer-events="none"/>
+</svg>""")
 
     svg_content = "\n".join(parts)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(svg_content)
     print(f"[✓] Written: {output_path}  ({len(svg_content):,} bytes)")
 
-
-# ──────────────────────────────────────────────────────────────────────────────
-# CLI
-# ──────────────────────────────────────────────────────────────────────────────
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Generate info-card.svg"
-    )
+    parser = argparse.ArgumentParser(description="Generate info-card.svg")
     parser.add_argument("--output", default=OUT_INFO)
     args = parser.parse_args()
     generate(args.output)
