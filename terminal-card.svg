@@ -1,284 +1,978 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380">
-  <rect width="520" height="380" fill="#0d1117" stroke="rgba(255,255,255,0.08)" stroke-width="1" rx="12"/>
-  <path d="M 0 12 A 12 12 0 0 1 12 0 L 508 0 A 12 12 0 0 1 520 12 L 520 36 L 0 36 Z" fill="rgba(255,255,255,0.04)"/>
-  <circle cx="20" cy="18" r="6" fill="#ff5f56"/>
-  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
-  <circle cx="60" cy="18" r="6" fill="#27c93f"/>
-  <text x="260" y="22" fill="#8b949e" font-size="12" font-family="'Courier New', Courier, monospace" text-anchor="middle">terminal — khushalsinghsankhla2808</text>
-  <text x="16" y="59.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.50s" fill="freeze"/>
-    ;;;;;;;;;;;;;;;;;;;;::::::::::;;;;:::::::::::::::::;;;;;;;;;;;
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="456" height="470"
+     viewBox="0 0 456 470"
+     role="img" aria-label="Terminal ASCII Portrait — khushalsinghsankhla2808">
+  <defs>
+    <!-- Terminal glass surface gradient -->
+    <linearGradient id="term-bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1a2332" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <!-- Title bar gradient -->
+    <linearGradient id="titlebar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#2d333b"/>
+      <stop offset="100%" stop-color="#22272e"/>
+    </linearGradient>
+
+    <!-- Outer card glow -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#00ffff" flood-opacity="0.25" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Text glow for ASCII art -->
+    <filter id="text-glow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scan-line pattern -->
+    <pattern id="scanlines" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="rgba(0,0,0,0.3)"/>
+    </pattern>
+
+    <!-- Cursor glow -->
+    <filter id="cursor-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="456" height="470" fill="#0d1117" rx="12"/>
+  <!-- Window frame -->
+  <rect x="2" y="2" width="452" height="466" rx="10" ry="10"
+        fill="url(#term-bg-grad)" filter="url(#card-shadow)"/>
+
+  <!-- Glass border -->
+  <rect x="2" y="2" width="452" height="466" rx="10" ry="10"
+        fill="none" stroke="#30363d" stroke-width="1" opacity="0.9"/>
+
+  <!-- Title bar -->
+  <rect x="2" y="2" width="452" height="36" rx="10" ry="10"
+        fill="url(#titlebar-grad)"/>
+  <rect x="2" y="28" width="452" height="10" fill="#22272e"/>
+
+  <!-- Title bar bottom border -->
+  <line x1="2" y1="38" x2="454" y2="38"
+        stroke="#30363d" stroke-width="1" opacity="0.6"/>
+
+  <!-- Traffic light buttons -->
+  <circle cx="24" cy="20" r="6" fill="#ff4444">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="44" cy="20" r="6" fill="#ffd700">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="64" cy="20" r="6" fill="#39d353">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Window title -->
+  <text x="228" y="25"
+        font-family="'SF Mono', 'Courier New', Courier, monospace"
+        font-size="11" fill="#8b949e" text-anchor="middle"
+        letter-spacing="0.5">
+    khushalsinghsankhla2808 — zsh — 80×26
   </text>
-  <rect x="16" y="52.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.50s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.50s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="68.7" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.56s" fill="freeze"/>
-    ;;;:::::::::::::::::;+**?%%??%SSS%%?*;::::::::::::::::::::::::
-  </text>
-  <rect x="16" y="61.2" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.56s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.56s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="77.9" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.62s" fill="freeze"/>
-    ;;;;;:::::::::::::+S#@@###@##########S*:::::::::::::::::::::::
-  </text>
-  <rect x="16" y="70.4" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.62s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.62s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="87.1" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.68s" fill="freeze"/>
-    ;;;;;::::::::::::;#@@#####@@@######@###+::::::::::::::::::::::
-  </text>
-  <rect x="16" y="79.6" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.68s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.68s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="96.3" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.74s" fill="freeze"/>
-    ;;;;;::::::::::::*@@@@@@@@@@@#####S%*+*;::::::::::::::::::::::
-  </text>
-  <rect x="16" y="88.8" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.74s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.74s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="105.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.80s" fill="freeze"/>
-    ;;;:::::::::::::;#@@@@@@@@@#S%??*+;:::::::::::::::::::::::::::
-  </text>
-  <rect x="16" y="98.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.80s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.80s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="114.7" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.86s" fill="freeze"/>
-    ;;;:::::::::::::+@@@@@@@@@##%??***++;;;+;:::::::::::::::::::::
-  </text>
-  <rect x="16" y="107.2" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.86s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.86s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="123.9" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.92s" fill="freeze"/>
-    ;;::::::::::::::;#@@@@####S%??%%%?%%*+??;:::::::::::::::::::::
-  </text>
-  <rect x="16" y="116.4" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.92s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.92s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="133.1" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.98s" fill="freeze"/>
-    ;;:::::::::::::::+#@#%%SS#%??**??****++;::::::::::::::::::::::
-  </text>
-  <rect x="16" y="125.6" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="0.98s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="0.98s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="142.3" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.04s" fill="freeze"/>
-    ;:::::::::::::::::;?%*?S%SS%??*+;::+**+:::::::::::::::::::::::
-  </text>
-  <rect x="16" y="134.8" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.04s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.04s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="151.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.10s" fill="freeze"/>
-    ;;:::::::::::::::::.?%*??%#S%???*;+???*+::::::::::::::::::::::
-  </text>
-  <rect x="16" y="144.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.10s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.10s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="160.7" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.16s" fill="freeze"/>
-    ;;:::::::::::::::::::%S*?S#S%%???*?%?*+*;:::::::::::::::::::::
-  </text>
-  <rect x="16" y="153.2" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.16s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.16s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="169.9" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.22s" fill="freeze"/>
-    ;;;:::::::::::::::::::%SSS##SS%%?***++;;::::::::::::::::::::::
-  </text>
-  <rect x="16" y="162.4" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.22s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.22s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="179.1" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.28s" fill="freeze"/>
-    ;;;;::::::::::::::::::+S%SS####S%%%?**+;::::::::::::::::::::::
-  </text>
-  <rect x="16" y="171.6" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.28s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.28s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="188.3" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.34s" fill="freeze"/>
-    ;;;;:::::::::::::::::;%S%%%%SSSSS####%?;::::::::::::::::::::::
-  </text>
-  <rect x="16" y="180.8" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.34s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.34s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="197.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.40s" fill="freeze"/>
-    ;;;;:::::::::::::::;?S*SS%%%%%%%%%%%%:+**??*+;;;::::::::::::::
-  </text>
-  <rect x="16" y="190.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.40s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.40s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="206.7" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.46s" fill="freeze"/>
-    ;;;;:::::::::::;+*?S##*;%S%????????S*;:???%SSS%%??**++::::::::
-  </text>
-  <rect x="16" y="199.2" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.46s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.46s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="215.9" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.52s" fill="freeze"/>
-    ;;;;;;:::::;+*?%S######+:+?%??????S%;+;+%%%%%%SSS%%%%S+:::::::
-  </text>
-  <rect x="16" y="208.4" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.52s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.52s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="225.1" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.58s" fill="freeze"/>
-    ;;;;:::;+*?%SSSSS######S;++******?%*;?%*%%%%%%S%%SS%%S?;::::::
-  </text>
-  <rect x="16" y="217.6" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.58s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.58s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="234.3" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.64s" fill="freeze"/>
-    ;;;;;*%%SSSSSSSSSS######?**+;+***?*;++S%%%%%%%S%%SSSSS%*::::::
-  </text>
-  <rect x="16" y="226.8" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.64s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.64s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="243.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.70s" fill="freeze"/>
-    ;;;:%@#SSSSSSSSSS#SSS###S+++;;;+?*:::;%%%%SS%S%%%%SSS#%%*::;:;
-  </text>
-  <rect x="16" y="236.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.70s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.70s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="252.7" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.76s" fill="freeze"/>
-    ;;;;S@###SSSSSSSSS#SSS###?:;;;;;+::::;%%%%%%%S%%%%SSS#%%%+:;;;
-  </text>
-  <rect x="16" y="245.2" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.76s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.76s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="261.9" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.82s" fill="freeze"/>
-    ;;;;#######SS##S#S##SSS##S+::::;:::::;%%%%%%SSS%S%%%S#S%%%+:;;
-  </text>
-  <rect x="16" y="254.4" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.82s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.82s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="271.1" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.88s" fill="freeze"/>
-    ;;:?@##########SS#S##SS###%::::;:::::+S%%%%%S%+:?S%%S#SS%%?;;;
-  </text>
-  <rect x="16" y="263.6" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.88s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.88s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="280.3" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.94s" fill="freeze"/>
-    ;;;S#############S#S##SS###?::::::::;+S%%S%S%**??S%%###SS%%*:;
-  </text>
-  <rect x="16" y="272.8" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="1.94s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="1.94s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="289.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.00s" fill="freeze"/>
-    ;;*@#######@########S##SS##S+:::;:::;*SSSSSSSSSSS%%S#@#SSS%%;;
-  </text>
-  <rect x="16" y="282.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.00s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="2.00s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="298.7" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.06s" fill="freeze"/>
-    ;;S@#######@############S###S;::::::;%#SSSS#SSS%%%%S@###SSS%*;
-  </text>
-  <rect x="16" y="291.2" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.06s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="2.06s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="307.9" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.12s" fill="freeze"/>
-    ;+#########@@################%:::::;+SSSSSSSSSSS%SS#@###SSS%%+
-  </text>
-  <rect x="16" y="300.4" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.12s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="2.12s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="317.1" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.18s" fill="freeze"/>
-    ;?@#########@@##############S#*:;::;*#SSSSSSSSSSSSS#@@###SSS%*
-  </text>
-  <rect x="16" y="309.6" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.18s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="2.18s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="326.3" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.24s" fill="freeze"/>
-    ;%@#########@@@@@@@@#########SS+;;:;%#SSS#SSSSSSSSS@@@####SSS%
-  </text>
-  <rect x="16" y="318.8" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.24s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="2.24s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <text x="16" y="335.5" font-size="9.5" font-family="'Courier New', Courier, monospace" fill="#39d353" xml:space="preserve" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.30s" fill="freeze"/>
-    ;#@#########@@@@@@@@@########S#S+::+S#SS#SSSSSSSSSS@@@@####SSS
-  </text>
-  <rect x="16" y="328.0" width="6" height="9" fill="#ffffff" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.30s" dur="0.06s"/>
-    <animate attributeName="x" from="16" to="369" begin="2.30s" dur="0.06s" fill="freeze"/>
-  </rect>
-  <g>
-    <clipPath id="clip-footer-1">
-      <rect x="16" y="338" width="0" height="15">
-        <animate attributeName="width" from="0" to="80" begin="2.50s" dur="0.56s" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <text x="16" y="350" font-family="'Courier New', Courier, monospace" font-size="11" clip-path="url(#clip-footer-1)">
-      <tspan fill="#00d4ff">$ </tspan><tspan fill="#ffffff">whoami</tspan>
-    </text>
-    <rect x="16" y="340" width="6" height="11" fill="#ffffff" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="2.50s" dur="0.56s"/>
-      <animate attributeName="x" from="16" to="72" begin="2.50s" dur="0.56s" fill="freeze"/>
+    <!-- Row 0 clip + text -->
+    <defs>
+      <clipPath id="clip-row-0">
+        <rect id="cr0" x="20" y="54.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.000s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="65.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-0)"
+          filter="url(#text-glow)"
+          xml:space="preserve">-```..               .. _+/^'                      .</text>
+    <rect id="cur-0" x="20" y="55.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.000s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.000s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.070s" dur="0.05s" fill="freeze"/>
     </rect>
-  </g>
-  <g>
-    <clipPath id="clip-footer-2">
-      <rect x="16" y="353" width="0" height="15">
-        <animate attributeName="width" from="0" to="180" begin="3.10s" dur="1.47s" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <text x="16" y="365" font-family="'Courier New', Courier, monospace" font-size="11" fill="#ffffff" clip-path="url(#clip-footer-2)">Khushal Singh Sankhla</text>
-    <rect x="16" y="355" width="6" height="11" fill="#ffffff" opacity="0">
-      <set attributeName="opacity" to="1" begin="3.10s" dur="1.47s"/>
-      <animate attributeName="x" from="16" to="165" begin="3.10s" dur="1.47s" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="4.57s" dur="0.8s" repeatCount="indefinite"/>
+    <!-- Row 1 clip + text -->
+    <defs>
+      <clipPath id="clip-row-1">
+        <rect id="cr1" x="20" y="68.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.100s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="79.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-1)"
+          filter="url(#text-glow)"
+          xml:space="preserve">                /[YQmhkmdMMM*pu)                    </text>
+    <rect id="cur-1" x="20" y="69.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.100s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.100s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.170s" dur="0.05s" fill="freeze"/>
     </rect>
-  </g>
+    <!-- Row 2 clip + text -->
+    <defs>
+      <clipPath id="clip-row-2">
+        <rect id="cr2" x="20" y="82.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.200s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="93.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-2)"
+          filter="url(#text-glow)"
+          xml:space="preserve">.              Y$$$$$$$$$$$$$$$$X                   </text>
+    <rect id="cur-2" x="20" y="83.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.200s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.200s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.270s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 3 clip + text -->
+    <defs>
+      <clipPath id="clip-row-3">
+        <rect id="cr3" x="20" y="96.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.300s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="107.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-3)"
+          filter="url(#text-glow)"
+          xml:space="preserve">              ,$$$$$$$$$$$$$%*Lxu.                  </text>
+    <rect id="cur-3" x="20" y="97.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.300s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.300s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.370s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 4 clip + text -->
+    <defs>
+      <clipPath id="clip-row-4">
+        <rect id="cr4" x="20" y="110.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.400s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="121.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-4)"
+          filter="url(#text-glow)"
+          xml:space="preserve">              J$$$$$$$$@pYv[!_                      </text>
+    <rect id="cur-4" x="20" y="111.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.400s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.400s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.470s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 5 clip + text -->
+    <defs>
+      <clipPath id="clip-row-5">
+        <rect id="cr5" x="20" y="124.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.500s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="135.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-5)"
+          filter="url(#text-glow)"
+          xml:space="preserve">             `$$$$$$$$$hYj|II):-)/                  </text>
+    <rect id="cur-5" x="20" y="125.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.500s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.500s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.570s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 6 clip + text -->
+    <defs>
+      <clipPath id="clip-row-6">
+        <rect id="cr6" x="20" y="138.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.600s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="149.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-6)"
+          filter="url(#text-glow)"
+          xml:space="preserve">              c$$$$$$BdzucwOJO])x)                  </text>
+    <rect id="cur-6" x="20" y="139.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.600s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.600s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.670s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 7 clip + text -->
+    <defs>
+      <clipPath id="clip-row-7">
+        <rect id="cr7" x="20" y="152.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.700s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="163.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-7)"
+          filter="url(#text-glow)"
+          xml:space="preserve">               u$JuwpMQvtI!&lt;;)(&gt;`                   </text>
+    <rect id="cur-7" x="20" y="153.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.700s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.700s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.770s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 8 clip + text -->
+    <defs>
+      <clipPath id="clip-row-8">
+        <rect id="cr8" x="20" y="166.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.800s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="177.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-8)"
+          filter="url(#text-glow)"
+          xml:space="preserve">                =0]vzb*Qc]I+ !xrl-                  </text>
+    <rect id="cur-8" x="20" y="167.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.800s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.800s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.870s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 9 clip + text -->
+    <defs>
+      <clipPath id="clip-row-9">
+        <rect id="cr9" x="20" y="180.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="0.900s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="191.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-9)"
+          filter="url(#text-glow)"
+          xml:space="preserve">                 !d}rb%pQcv(|Yz{I&gt;                  </text>
+    <rect id="cur-9" x="20" y="181.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="0.900s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="0.900s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="0.970s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 10 clip + text -->
+    <defs>
+      <clipPath id="clip-row-10">
+        <rect id="cr10" x="20" y="194.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.000s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="205.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-10)"
+          filter="url(#text-glow)"
+          xml:space="preserve">                  (apk@MkwYf)\i&quot;_                   </text>
+    <rect id="cur-10" x="20" y="195.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.000s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.000s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.070s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 11 clip + text -->
+    <defs>
+      <clipPath id="clip-row-11">
+        <rect id="cr11" x="20" y="208.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.100s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="219.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-11)"
+          filter="url(#text-glow)"
+          xml:space="preserve">                  .qpq*&amp;88adqQzxI                   </text>
+    <rect id="cur-11" x="20" y="209.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.100s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.100s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.170s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 12 clip + text -->
+    <defs>
+      <clipPath id="clip-row-12">
+        <rect id="cr12" x="20" y="222.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.200s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="233.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-12)"
+          filter="url(#text-glow)"
+          xml:space="preserve">                 \r#bZ0OZqk*W#h{)++;                </text>
+    <rect id="cur-12" x="20" y="223.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.200s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.200s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.270s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 13 clip + text -->
+    <defs>
+      <clipPath id="clip-row-13">
+        <rect id="cr13" x="20" y="236.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.300s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="247.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-13)"
+          filter="url(#text-glow)"
+          xml:space="preserve">              '&gt;z$Y(ppJXXUJYu0v /nnL0Yr}I)&quot;,`       </text>
+    <rect id="cur-13" x="20" y="237.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.300s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.300s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.370s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 14 clip + text -->
+    <defs>
+      <clipPath id="clip-row-14">
+        <rect id="cr14" x="20" y="250.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.400s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="261.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-14)"
+          filter="url(#text-glow)"
+          xml:space="preserve">.         '&gt;tQo%$$$! (UcrrrnC*&gt;: rzzOpkhpwZQZ!      </text>
+    <rect id="cur-14" x="20" y="251.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.400s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.400s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.470s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 15 clip + text -->
+    <defs>
+      <clipPath id="clip-row-15">
+        <rect id="cr15" x="20" y="264.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.500s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="275.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-15)"
+          filter="url(#text-glow)"
+          xml:space="preserve">.     =lfLb*M#W%8B$W+^((()(t0n'fYr0OQLppZwqmh0:     </text>
+    <rect id="cur-15" x="20" y="265.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.500s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.500s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.570s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 16 clip + text -->
+    <defs>
+      <clipPath id="clip-row-16">
+        <rect id="cr16" x="20" y="278.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.600s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="289.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-16)"
+          filter="url(#text-glow)"
+          xml:space="preserve">.. ;uOkMWM*oaoW&amp;&amp;%@$L?(+=(|rr-'(dJCwZLpw0qdq*pr     </text>
+    <rect id="cur-16" x="20" y="279.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.600s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.600s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.670s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 17 clip + text -->
+    <defs>
+      <clipPath id="clip-row-17">
+        <rect id="cr17" x="20" y="292.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.700s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="303.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-17)"
+          filter="url(#text-glow)"
+          xml:space="preserve">`` {$%####MM#o&amp;M*M8@&amp;&lt;;/_'\]   =OLCwqwqOOmpwWb0}    </text>
+    <rect id="cur-17" x="20" y="293.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.700s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.700s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.770s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 18 clip + text -->
+    <defs>
+      <clipPath id="clip-row-18">
+        <rect id="cr18" x="20" y="306.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.800s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="317.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-18)"
+          filter="url(#text-glow)"
+          xml:space="preserve">`_ z$$8&amp;&amp;MW&amp;WMM8*a#%@Y    `    &quot;w0LmmpbdwZqw&amp;hQL?   </text>
+    <rect id="cur-18" x="20" y="307.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.800s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.800s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.870s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 19 clip + text -->
+    <defs>
+      <clipPath id="clip-row-19">
+        <rect id="cr19" x="20" y="320.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="1.900s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="331.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-19)"
+          filter="url(#text-glow)"
+          xml:space="preserve">_`:M$$$%@8&amp;%&amp;MWM%*a&amp;&amp;8I        &lt;bZOZZbc&quot;[wZmB&amp;dQC| .</text>
+    <rect id="cur-19" x="20" y="321.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="1.900s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="1.900s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="1.970s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 20 clip + text -->
+    <defs>
+      <clipPath id="clip-row-20">
+        <rect id="cr20" x="20" y="334.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="2.000s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="345.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-20)"
+          filter="url(#text-glow)"
+          xml:space="preserve">' ]$$$$$$$B@@8WWM%M*W8o:       Ihwqwb0|(nqmb$$*qZc` </text>
+    <rect id="cur-20" x="20" y="335.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="2.000s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="2.000s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="2.070s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 21 clip + text -->
+    <defs>
+      <clipPath id="clip-row-21">
+        <rect id="cr21" x="20" y="348.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="2.100s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="359.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-21)"
+          filter="url(#text-glow)"
+          xml:space="preserve">__o$$$$$$$$$$$$%8&amp;BWM&amp;BL       fMqbh#h#MhwmM$$Mkpw/ </text>
+    <rect id="cur-21" x="20" y="349.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="2.100s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="2.100s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="2.170s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 22 clip + text -->
+    <defs>
+      <clipPath id="clip-row-22">
+        <rect id="cr22" x="20" y="362.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="2.200s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="373.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-22)"
+          filter="url(#text-glow)"
+          xml:space="preserve">./$$$$$$$$$$$$$$@%%$&amp;&amp;&amp;B]     :OMbkoWobpwww$$$%okqJ,</text>
+    <rect id="cur-22" x="20" y="363.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="2.200s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="2.200s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="2.270s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 23 clip + text -->
+    <defs>
+      <clipPath id="clip-row-23">
+        <rect id="cr23" x="20" y="376.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="2.300s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="387.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-23)"
+          filter="url(#text-glow)"
+          xml:space="preserve">`Q$$$$$$$$$$$$$$$@%%$%W&amp;M&gt;    i&amp;#haM#*akpqb$$$$&amp;abw)</text>
+    <rect id="cur-23" x="20" y="377.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="2.300s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="2.300s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="2.370s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 24 clip + text -->
+    <defs>
+      <clipPath id="clip-row-24">
+        <rect id="cr24" x="20" y="390.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="2.400s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="401.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-24)"
+          filter="url(#text-glow)"
+          xml:space="preserve">;*$$$$$$$$$$$$$$$$$$B$@W&amp;b^   r@*oWM#*oabb*$$$$BM#oL</text>
+    <rect id="cur-24" x="20" y="391.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="2.400s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="2.400s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="2.470s" dur="0.05s" fill="freeze"/>
+    </rect>
+    <!-- Row 25 clip + text -->
+    <defs>
+      <clipPath id="clip-row-25">
+        <rect id="cr25" x="20" y="404.0" width="0" height="15.0">
+          <animate attributeName="width"
+                   from="0" to="416.0"
+                   begin="2.500s" dur="0.120s"
+                   fill="freeze" calcMode="spline"
+                   keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+        </rect>
+      </clipPath>
+    </defs>
+    <text x="20" y="415.0"
+          font-family="'SF Mono', 'Courier New', Courier, monospace"
+          font-size="11" fill="#39d353"
+          clip-path="url(#clip-row-25)"
+          filter="url(#text-glow)"
+          xml:space="preserve">&lt;$$$$$$$$$$$$$$$$$$$$%$$M8O: _w@#&amp;&amp;MM#aabb&amp;$$$$$%#*a</text>
+    <rect id="cur-25" x="20" y="405.0"
+          width="8.0" height="14.0"
+          fill="#ffffff" opacity="0" filter="url(#cursor-glow)">
+      <!-- appear -->
+      <animate attributeName="opacity" from="0" to="0.85"
+               begin="2.500s" dur="0.02s" fill="freeze"/>
+      <!-- sweep x -->
+      <animate attributeName="x"
+               from="20" to="428.0"
+               begin="2.500s" dur="4.680s"
+               fill="freeze" calcMode="linear"/>
+      <!-- disappear when row done -->
+      <animate attributeName="opacity" from="0.85" to="0"
+               begin="2.570s" dur="0.05s" fill="freeze"/>
+    </rect>
+  <rect x="2" y="38" width="452" height="430" fill="url(#scanlines)" opacity="0.15" pointer-events="none" rx="4"/>
+  <line x1="20" y1="422.0" x2="436" y2="422.0" stroke="#30363d" stroke-width="0.5" opacity="0.6"/>
+  <text x="20.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">$<animate attributeName="opacity" from="0" to="1" begin="3.020s" dur="0.05s" fill="freeze"/></text>
+  <text x="28.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve"> <animate attributeName="opacity" from="0" to="1" begin="3.120s" dur="0.05s" fill="freeze"/></text>
+  <text x="36.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">w<animate attributeName="opacity" from="0" to="1" begin="3.220s" dur="0.05s" fill="freeze"/></text>
+  <text x="44.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">h<animate attributeName="opacity" from="0" to="1" begin="3.320s" dur="0.05s" fill="freeze"/></text>
+  <text x="52.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">o<animate attributeName="opacity" from="0" to="1" begin="3.420s" dur="0.05s" fill="freeze"/></text>
+  <text x="60.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">a<animate attributeName="opacity" from="0" to="1" begin="3.520s" dur="0.05s" fill="freeze"/></text>
+  <text x="68.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">m<animate attributeName="opacity" from="0" to="1" begin="3.620s" dur="0.05s" fill="freeze"/></text>
+  <text x="76.0" y="432.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#39d353" opacity="0" xml:space="preserve">i<animate attributeName="opacity" from="0" to="1" begin="3.720s" dur="0.05s" fill="freeze"/></text>
+  <rect x="84.0" y="421.0" width="8.0" height="14.0" fill="#39d353" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="3.820s" dur="0.05s" fill="freeze"/><animate attributeName="opacity" values="1;0;1" dur="0.6s" begin="3.820s" repeatCount="3"/><animate attributeName="opacity" from="1" to="0" begin="4.420s" dur="0.05s" fill="freeze"/></rect>
+  <text x="20.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">K<animate attributeName="opacity" from="0" to="1" begin="4.420s" dur="0.05s" fill="freeze"/></text>
+  <text x="28.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">h<animate attributeName="opacity" from="0" to="1" begin="4.490s" dur="0.05s" fill="freeze"/></text>
+  <text x="36.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">u<animate attributeName="opacity" from="0" to="1" begin="4.560s" dur="0.05s" fill="freeze"/></text>
+  <text x="44.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">s<animate attributeName="opacity" from="0" to="1" begin="4.630s" dur="0.05s" fill="freeze"/></text>
+  <text x="52.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">h<animate attributeName="opacity" from="0" to="1" begin="4.700s" dur="0.05s" fill="freeze"/></text>
+  <text x="60.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">a<animate attributeName="opacity" from="0" to="1" begin="4.770s" dur="0.05s" fill="freeze"/></text>
+  <text x="68.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">l<animate attributeName="opacity" from="0" to="1" begin="4.840s" dur="0.05s" fill="freeze"/></text>
+  <text x="76.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0"> <animate attributeName="opacity" from="0" to="1" begin="4.910s" dur="0.05s" fill="freeze"/></text>
+  <text x="84.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">S<animate attributeName="opacity" from="0" to="1" begin="4.980s" dur="0.05s" fill="freeze"/></text>
+  <text x="92.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">i<animate attributeName="opacity" from="0" to="1" begin="5.050s" dur="0.05s" fill="freeze"/></text>
+  <text x="100.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">n<animate attributeName="opacity" from="0" to="1" begin="5.120s" dur="0.05s" fill="freeze"/></text>
+  <text x="108.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">g<animate attributeName="opacity" from="0" to="1" begin="5.190s" dur="0.05s" fill="freeze"/></text>
+  <text x="116.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">h<animate attributeName="opacity" from="0" to="1" begin="5.260s" dur="0.05s" fill="freeze"/></text>
+  <text x="124.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0"> <animate attributeName="opacity" from="0" to="1" begin="5.330s" dur="0.05s" fill="freeze"/></text>
+  <text x="132.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">S<animate attributeName="opacity" from="0" to="1" begin="5.400s" dur="0.05s" fill="freeze"/></text>
+  <text x="140.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">a<animate attributeName="opacity" from="0" to="1" begin="5.470s" dur="0.05s" fill="freeze"/></text>
+  <text x="148.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">n<animate attributeName="opacity" from="0" to="1" begin="5.540s" dur="0.05s" fill="freeze"/></text>
+  <text x="156.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">k<animate attributeName="opacity" from="0" to="1" begin="5.610s" dur="0.05s" fill="freeze"/></text>
+  <text x="164.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">h<animate attributeName="opacity" from="0" to="1" begin="5.680s" dur="0.05s" fill="freeze"/></text>
+  <text x="172.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">l<animate attributeName="opacity" from="0" to="1" begin="5.750s" dur="0.05s" fill="freeze"/></text>
+  <text x="180.0" y="450.0" font-family="'SF Mono', 'Courier New', Courier, monospace" font-size="11" fill="#00ffff" font-weight="bold" opacity="0">a<animate attributeName="opacity" from="0" to="1" begin="5.820s" dur="0.05s" fill="freeze"/></text>
 </svg>
