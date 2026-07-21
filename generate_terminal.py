@@ -1,8 +1,8 @@
 """
 generate_terminal.py
 ─────────────────────
-Generates a 440x440 side-by-side compatible terminal SVG card (`terminal-card.svg`):
-  • Fetches GitHub avatar → converts to ASCII art via Pillow
+Generates a compact 250x400 terminal SVG card (`terminal-card.svg`) for 1:4 ratio layout:
+  • Fetches GitHub avatar → converts to 28x21 ASCII art via Pillow
   • macOS-style glassmorphic terminal window
   • Row-by-row ASCII reveal animation
   • Sweeping cursor block per row
@@ -13,26 +13,24 @@ import argparse
 import io
 import os
 import sys
-import xml.sax.saxutils as saxutils
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import PALETTE, OUT_TERMINAL, ANIM, USERNAME, DISPLAY_NAME
 
-# Dimensions for exact 440x440 side-by-side box
-SVG_W = 440
-SVG_H = 440
+SVG_W = 250
+SVG_H = 400
 
-ASCII_W = 48          # characters per row
-ASCII_H = 23          # rows
+ASCII_W = 28          # characters per row
+ASCII_H = 21          # rows
 DENSITY = " .`-_':,;^=+/\"|)\\<>)(i!lI?/\\|)(}{][tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
 
-CHAR_W = 7.5          # character advance width
-CHAR_H = 12.5         # row line height
-FONT_SIZE = 10
+CHAR_W = 7.0          # character advance width
+CHAR_H = 12.0         # row line height
+FONT_SIZE = 9.5
 
 TITLE_BAR_H = 34
-PADDING_X = 20
-PADDING_Y = 12
+PADDING_X = 27
+PADDING_Y = 14
 INNER_X = 2
 INNER_Y = 2
 CONTENT_W = SVG_W - 4
@@ -83,29 +81,27 @@ def image_to_ascii(img) -> list[str]:
 def _silhouette_ascii() -> list[str]:
     """Built-in fallback ASCII silhouette."""
     template = [
-        "                 ......::::::......                 ",
-        "             ..:::::::::::::::::::::..              ",
-        "           .::::::::::::::::::::::::::::            ",
-        "         .::::::::::::::::::::::::::::::.           ",
-        "        .::::::::::::::::::::::::::::::::.          ",
-        "       :::::::::::::::::::::::::::::::::::          ",
-        "      ::::::::::::::::::::::::::::::::::::          ",
-        "      ::::::::.          .::::::::.:::::::          ",
-        "      ::::::::           ::::::::::::::::           ",
-        "       :::::::.         .::::::::::::::::           ",
-        "       :::::::::::::::::::::::::::::::::.           ",
-        "        :::::::::::::::::::::::::::::::             ",
-        "         .:::::::::::      ::::::::::::             ",
-        "           ::::::::          ::::::::::             ",
-        "            ::::::::::::::::::::::::::              ",
-        "           :::::::::::::::::::::::::::.             ",
-        "         .::::::::::::::::::::::::::::::            ",
-        "       .:::::::::::::::::::::::::::::::::.          ",
-        "     .::::::::::::::::..      ..::::::::::::::::    ",
-        "   .:::::::::::::::.              .:::::::::::::::: ",
-        " .::::::::::::::::                  .::::::::::::::.",
-        ":::::::::::::::.                      .:::::::::::::",
-        ":::::::::::::::                          .::::::::::",
+        "       ......::::::......       ",
+        "    ..:::::::::::::::::::::..   ",
+        "  .:::::::::::::::::::::::::::: ",
+        " .::::::::::::::::::::::::::::::.",
+        ".::::::::::::::::::::::::::::::::.",
+        ":::::::::::::::::::::::::::::::::",
+        ":::::::::::::::::::::::::::::::::",
+        "::::::::.          .::::::::.::::",
+        "::::::::           ::::::::::::::",
+        " :::::::.         .::::::::::::::",
+        " :::::::::::::::::::::::::::::::.",
+        "  :::::::::::::::::::::::::::::::",
+        "   .:::::::::::      ::::::::::::",
+        "     ::::::::          ::::::::::",
+        "      :::::::::::::::::::::::::: ",
+        "     :::::::::::::::::::::::::::.",
+        "   .:::::::::::::::::::::::::::: ",
+        " .::::::::::::::::::::::::::::::.",
+        ":::::::::::::::::...  ...::::::::",
+        ":::::::::::::.            .::::::",
+        ":::::::::::.                .::::",
     ]
     rows = []
     for row in template[:ASCII_H]:
@@ -172,13 +168,13 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
   <line x1="{INNER_X}" y1="{INNER_Y + TITLE_BAR_H}" x2="{INNER_X + CONTENT_W}" y2="{INNER_Y + TITLE_BAR_H}" stroke="{PALETTE['border']}" stroke-width="1" opacity="0.6"/>
 
   <!-- Traffic lights -->
-  <circle cx="{INNER_X + 18}" cy="{INNER_Y + 17}" r="5.5" fill="{PALETTE['red']}"/>
-  <circle cx="{INNER_X + 34}" cy="{INNER_Y + 17}" r="5.5" fill="{PALETTE['yellow']}"/>
-  <circle cx="{INNER_X + 50}" cy="{INNER_Y + 17}" r="5.5" fill="{PALETTE['green']}"/>
+  <circle cx="{INNER_X + 16}" cy="{INNER_Y + 17}" r="5" fill="{PALETTE['red']}"/>
+  <circle cx="{INNER_X + 30}" cy="{INNER_Y + 17}" r="5" fill="{PALETTE['yellow']}"/>
+  <circle cx="{INNER_X + 44}" cy="{INNER_Y + 17}" r="5" fill="{PALETTE['green']}"/>
 
   <!-- Title -->
-  <text x="{SVG_W // 2}" y="{INNER_Y + 21}" font-family="'Courier New', Courier, monospace" font-size="11" fill="{PALETTE['muted']}" text-anchor="middle">
-    terminal — {USERNAME}
+  <text x="{SVG_W // 2}" y="{INNER_Y + 21}" font-family="'Courier New', Courier, monospace" font-size="10" fill="{PALETTE['muted']}" text-anchor="middle">
+    terminal — {USERNAME[:12]}
   </text>""")
 
     # ASCII Rows
@@ -204,31 +200,31 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
     </clipPath>
     <text x="{text_x}" y="{baseline:.1f}" font-family="'Courier New', Courier, monospace" font-size="{FONT_SIZE}" fill="{ascii_color}" clip-path="url(#{clip_id})" xml:space="preserve">{escaped}</text>
     <!-- Cursor block -->
-    <rect x="{text_x}" y="{row_y:.1f}" width="6" height="10" fill="{PALETTE['white']}" visibility="hidden">
+    <rect x="{text_x}" y="{row_y:.1f}" width="5" height="9" fill="{PALETTE['white']}" visibility="hidden">
       <set attributeName="visibility" to="visible" begin="{row_start:.2f}s" dur="{dur_s:.2f}s"/>
-      <animate attributeName="x" from="{text_x}" to="{text_x + row_w - 6:.1f}" begin="{row_start:.2f}s" dur="{dur_s:.2f}s" fill="freeze"/>
+      <animate attributeName="x" from="{text_x}" to="{text_x + row_w - 5:.1f}" begin="{row_start:.2f}s" dur="{dur_s:.2f}s" fill="freeze"/>
     </rect>
   </g>""")
 
     # Footer Typewriter lines (below ASCII art)
-    footer_y1 = 366.0
-    footer_y2 = 384.0
+    footer_y1 = 330.0
+    footer_y2 = 348.0
 
     # Line 1: "$ whoami"
     parts.append(f"""  <!-- Footer Typewriter -->
-  <line x1="{text_x}" y1="352" x2="{INNER_X + CONTENT_W - PADDING_X}" y2="352" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
+  <line x1="16" y1="316" x2="{SVG_W - 16}" y2="316" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
   <g>
     <clipPath id="clip-footer-1">
-      <rect x="{text_x}" y="354" width="0" height="14">
-        <animate attributeName="width" from="0" to="80" begin="2.2s" dur="0.5s" fill="freeze"/>
+      <rect x="16" y="320" width="0" height="14">
+        <animate attributeName="width" from="0" to="80" begin="2.0s" dur="0.5s" fill="freeze"/>
       </rect>
     </clipPath>
-    <text x="{text_x}" y="{footer_y1}" font-family="'Courier New', Courier, monospace" font-size="11" clip-path="url(#clip-footer-1)">
+    <text x="16" y="{footer_y1}" font-family="'Courier New', Courier, monospace" font-size="10.5" clip-path="url(#clip-footer-1)">
       <tspan fill="{PALETTE['cyan']}">$ </tspan><tspan fill="{PALETTE['white']}">whoami</tspan>
     </text>
-    <rect x="{text_x}" y="356" width="6" height="11" fill="#ffffff" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="2.2s" dur="0.5s"/>
-      <animate attributeName="x" from="{text_x}" to="{text_x + 65}" begin="2.2s" dur="0.5s" fill="freeze"/>
+    <rect x="16" y="321" width="5" height="10" fill="#ffffff" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="2.0s" dur="0.5s"/>
+      <animate attributeName="x" from="16" to="78" begin="2.0s" dur="0.5s" fill="freeze"/>
     </rect>
   </g>""")
 
@@ -236,16 +232,16 @@ def generate(rows: list[str], output_path: str = OUT_TERMINAL) -> None:
     escaped_name = _escape_svg(DISPLAY_NAME)
     parts.append(f"""  <g>
     <clipPath id="clip-footer-2">
-      <rect x="{text_x}" y="372" width="0" height="16">
-        <animate attributeName="width" from="0" to="220" begin="2.8s" dur="1.2s" fill="freeze"/>
+      <rect x="16" y="336" width="0" height="16">
+        <animate attributeName="width" from="0" to="210" begin="2.6s" dur="1.2s" fill="freeze"/>
       </rect>
     </clipPath>
-    <text x="{text_x}" y="{footer_y2}" font-family="'Courier New', Courier, monospace" font-size="11" fill="{PALETTE['cyan']}" font-weight="bold" clip-path="url(#clip-footer-2)">{escaped_name}</text>
+    <text x="16" y="{footer_y2}" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="{PALETTE['cyan']}" font-weight="bold" clip-path="url(#clip-footer-2)">{escaped_name}</text>
     <!-- Blinking final cursor -->
-    <rect x="{text_x}" y="374" width="6" height="11" fill="#ffffff" opacity="0">
-      <set attributeName="opacity" to="1" begin="2.8s" dur="1.2s"/>
-      <animate attributeName="x" from="{text_x}" to="{text_x + 165}" begin="2.8s" dur="1.2s" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="4.0s" dur="0.8s" repeatCount="indefinite"/>
+    <rect x="16" y="338" width="5" height="10" fill="#ffffff" opacity="0">
+      <set attributeName="opacity" to="1" begin="2.6s" dur="1.2s"/>
+      <animate attributeName="x" from="16" to="160" begin="2.6s" dur="1.2s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" begin="3.8s" dur="0.8s" repeatCount="indefinite"/>
     </rect>
   </g>""")
 

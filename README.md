@@ -4,8 +4,8 @@
 <p align="center">
 <table>
 <tr>
-<td width="440" align="center" valign="top"><img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="440"/></td>
-<td width="440" align="center" valign="top"><img src="info-card.svg" alt="Neofetch Info Card" width="440"/></td>
+<td width="250" align="center" valign="top"><img src="terminal-card.svg" alt="Terminal ASCII Portrait" width="250"/></td>
+<td width="650" align="center" valign="top"><img src="info-card.svg" alt="Neofetch Info Card" width="650"/></td>
 </tr>
 </table>
 </p>

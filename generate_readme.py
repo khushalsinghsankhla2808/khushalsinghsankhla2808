@@ -3,11 +3,11 @@ generate_readme.py
 ──────────────────
 Injects the three SVG cards into README.md using HTML comment markers.
 
-  Layout:
-    ┌───────────────────────────┬───────────────────────────┐
-    │  terminal-card.svg (440)  │    info-card.svg (440)    │
-    └───────────────────────────┴───────────────────────────┘
-         github-contribution-animation.svg (900)
+  Layout: 1:4 ratio horizontal cards (250px vs 650px)
+    ┌───────────────────────┬─────────────────────────────────────────────────────────┐
+    │ terminal-card.svg 250 │                   info-card.svg 650                     │
+    └───────────────────────┴─────────────────────────────────────────────────────────┘
+                               github-contribution-animation.svg 900
 """
 
 import os
@@ -44,8 +44,8 @@ def _build_injection(
         '<p align="center">\n'
         "<table>\n"
         "<tr>\n"
-        f'<td width="440" align="center" valign="top"><img src="{tc}" alt="Terminal ASCII Portrait" width="440"/></td>\n'
-        f'<td width="440" align="center" valign="top"><img src="{ic}" alt="Neofetch Info Card" width="440"/></td>\n'
+        f'<td width="250" align="center" valign="top"><img src="{tc}" alt="Terminal ASCII Portrait" width="250"/></td>\n'
+        f'<td width="650" align="center" valign="top"><img src="{ic}" alt="Neofetch Info Card" width="650"/></td>\n'
         "</tr>\n"
         "</table>\n"
         "</p>\n\n"

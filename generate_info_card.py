@@ -1,10 +1,12 @@
 """
 generate_info_card.py
 ─────────────────────
-Generates a native 440x440 side-by-side info card (`info-card.svg`):
-  • 440x440 exact matching box dimensions to terminal-card.svg
-  • Single-column layout with large, crisp, 100% visible 11px-14px typography
-  • Sections: Header, ABOUT, STACK, HIGHLIGHTS, Footer
+Generates a wide 650x400 2-column NeoFetch SVG card (`info-card.svg`) for 1:4 ratio layout:
+  • 650x400 matching height card to terminal-card.svg
+  • 2-column layout with 100% large, crisp, visible 11px-16px text
+  • Left column: Identity, System Info, About & Focus, Highlights
+  • Right column: Tech Stack, Featured Projects, Certifications
+  • Bottom banner: Currently Building & Always Learning
   • Pure SMIL staggered slide-up and fade-in animations
 
 Run:  python generate_info_card.py
@@ -18,8 +20,8 @@ import xml.sax.saxutils as saxutils
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import PALETTE, OUT_INFO, USERNAME, DISPLAY_NAME
 
-SVG_W = 440
-SVG_H = 440
+SVG_W = 650
+SVG_H = 400
 
 TITLE_BAR_H = 34
 INNER_X = 2
@@ -83,81 +85,114 @@ def generate(output_path: str = OUT_INFO) -> None:
   <line x1="{INNER_X}" y1="{INNER_Y + TITLE_BAR_H}" x2="{INNER_X + CONTENT_W}" y2="{INNER_Y + TITLE_BAR_H}" stroke="{PALETTE['border']}" stroke-width="1" opacity="0.6"/>
 
   <!-- Window control buttons -->
-  <circle cx="{INNER_X + 18}" cy="{INNER_Y + 17}" r="5.5" fill="{PALETTE['red']}"/>
-  <circle cx="{INNER_X + 34}" cy="{INNER_Y + 17}" r="5.5" fill="{PALETTE['yellow']}"/>
-  <circle cx="{INNER_X + 50}" cy="{INNER_Y + 17}" r="5.5" fill="{PALETTE['green']}"/>
+  <circle cx="{INNER_X + 16}" cy="{INNER_Y + 17}" r="5" fill="{PALETTE['red']}"/>
+  <circle cx="{INNER_X + 30}" cy="{INNER_Y + 17}" r="5" fill="{PALETTE['yellow']}"/>
+  <circle cx="{INNER_X + 44}" cy="{INNER_Y + 17}" r="5" fill="{PALETTE['green']}"/>
 
   <!-- Title text -->
   <text x="{SVG_W // 2}" y="{INNER_Y + 21}" font-family="'Courier New', Courier, monospace" font-size="11" fill="{PALETTE['muted']}" text-anchor="middle">
     neofetch — {USERNAME}@github
   </text>""")
 
-    # Structured Lines Specification for 440px Height Card
-    lines_spec = [
-        # Header (y=58)
-        {"type": "header", "text": USERNAME, "color": PALETTE["purple"], "size": 13, "weight": "bold"},
-        {"type": "sep", "text": "──────────────────────────────────", "color": PALETTE["border"], "size": 11},
-        
-        # ABOUT
-        {"type": "pair", "label": "OS      :", "val": "MCA @ JECRC University", "color": PALETTE["orange"]},
-        {"type": "pair", "label": "CGPA    :", "val": "8.65 / 10", "color": PALETTE["orange"]},
-        {"type": "pair", "label": "Focus   :", "val": "Data Analytics & BI", "color": PALETTE["orange"]},
-        {"type": "pair", "label": "City    :", "val": "Jodhpur, Rajasthan", "color": PALETTE["orange"]},
-        
-        # STACK
-        {"type": "section", "text": "STACK", "color": PALETTE["cyan"], "size": 11},
-        {"type": "pair", "label": "BI      :", "val": "Power BI · DAX · Fabric", "color": PALETTE["cyan"]},
-        {"type": "pair", "label": "DB      :", "val": "PostgreSQL · MongoDB", "color": PALETTE["cyan"]},
-        {"type": "pair", "label": "Lang    :", "val": "Python · SQL · JS", "color": PALETTE["cyan"]},
-        {"type": "pair", "label": "AI      :", "val": "Gemini · Claude · MERN", "color": PALETTE["cyan"]},
-        
-        # HIGHLIGHTS
-        {"type": "section", "text": "HIGHLIGHTS", "color": PALETTE["green"], "size": 11},
-        {"type": "bullet", "text": "★ 8+ End-to-End Analytics Projects", "color": PALETTE["green"], "size": 11},
-        {"type": "bullet", "text": "★ 4x Microsoft & Cisco Certifications", "color": PALETTE["green"], "size": 11},
-        {"type": "bullet", "text": "★ Velora AI — MERN + DeepSeek Builder", "color": PALETTE["green"], "size": 11},
-        {"type": "bullet", "text": "★ Samsung Supply Chain BI & Spotify Top 50", "color": PALETTE["green"], "size": 11},
-        
-        # Footer
-        {"type": "footer", "text": f"github.com/{USERNAME}", "color": PALETTE["muted"], "size": 10}
-    ]
-
-    curr_y = 58.0
-    line_h = 19.5
     font_family = "'Courier New', Courier, monospace"
 
-    for i, item in enumerate(lines_spec):
-        actual_begin = 0.3 + i * 0.05
+    # ============================================================================
+    # LEFT COLUMN (x=20 to 310)
+    # ============================================================================
+    lx = 20
 
-        if item["type"] == "section":
-            curr_y += 3.0
+    # Header Identity
+    parts.append(f"""  <!-- LEFT COLUMN -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.35s" fill="freeze"/>
+    <text x="{lx}" y="58" font-family="{font_family}" font-size="16" font-weight="bold" fill="{PALETTE['purple']}">{_escape_svg(DISPLAY_NAME)}</text>
+    <text x="{lx}" y="74" font-family="{font_family}" font-size="10" fill="{PALETTE['muted']}">Data Analytics • BI • AI Developer</text>
+    <line x1="{lx}" y1="83" x2="310" y2="83" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
+  </g>""")
 
-        y_pos = curr_y
+    # System Info & About
+    parts.append(f"""  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.4s" dur="0.35s" fill="freeze"/>
+    <text x="{lx}" y="103" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['yellow']}">╭─ 🖥️ System &amp; Education</text>
+    
+    <text x="{lx + 8}" y="122" font-family="{font_family}" font-size="11"><tspan font-weight="bold" fill="{PALETTE['orange']}">Program : </tspan><tspan fill="{PALETTE['white']}">MCA @ JECRC University</tspan></text>
+    <text x="{lx + 8}" y="139" font-family="{font_family}" font-size="11"><tspan font-weight="bold" fill="{PALETTE['orange']}">CGPA    : </tspan><tspan fill="{PALETTE['white']}">8.65 / 10</tspan></text>
+    <text x="{lx + 8}" y="156" font-family="{font_family}" font-size="11"><tspan font-weight="bold" fill="{PALETTE['orange']}">Focus   : </tspan><tspan fill="{PALETTE['white']}">Data Analytics &amp; BI</tspan></text>
+    <text x="{lx + 8}" y="173" font-family="{font_family}" font-size="11"><tspan font-weight="bold" fill="{PALETTE['orange']}">Location: </tspan><tspan fill="{PALETTE['white']}">Jodhpur, Rajasthan</tspan></text>
+    <text x="{lx + 8}" y="190" font-family="{font_family}" font-size="11"><tspan font-weight="bold" fill="{PALETTE['orange']}">Status  : </tspan><tspan fill="{PALETTE['white']}">  Open for Roles</tspan></text>
 
-        parts.append(f'  <g opacity="0">')
-        parts.append(f'    <animate attributeName="opacity" from="0" to="1" begin="{actual_begin:.2f}s" dur="0.35s" fill="freeze"/>')
-        parts.append(f'    <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="{actual_begin:.2f}s" dur="0.35s" fill="freeze"/>')
+    <!-- Status indicator circle -->
+    <circle cx="{lx + 68}" cy="186.5" r="3.5" fill="{PALETTE['green']}"/>
+  </g>""")
 
-        if item["type"] == "header":
-            txt = _escape_svg(item["text"])
-            parts.append(f'    <text x="20" y="{y_pos:.1f}" fill="{item["color"]}" font-size="{item["size"]}" font-weight="bold" font-family="{font_family}">{txt}</text>')
-        elif item["type"] in ("sep", "section", "bullet"):
-            txt = _escape_svg(item["text"])
-            weight_attr = ' font-weight="bold"' if item["type"] == "section" else ''
-            parts.append(f'    <text x="20" y="{y_pos:.1f}" fill="{item["color"]}" font-size="{item["size"]}"{weight_attr} font-family="{font_family}">{txt}</text>')
-        elif item["type"] == "pair":
-            lbl = _escape_svg(item["label"])
-            val = _escape_svg(item["val"])
-            parts.append(f'    <text x="20" y="{y_pos:.1f}" fill="{item["color"]}" font-size="11" font-weight="bold" font-family="{font_family}">{lbl}</text>')
-            parts.append(f'    <text x="110" y="{y_pos:.1f}" fill="{PALETTE["white"]}" font-size="11" font-family="{font_family}">{val}</text>')
-        elif item["type"] == "footer":
-            txt = _escape_svg(item["text"])
-            parts.append(f'    <text x="{SVG_W // 2}" y="420" fill="{item["color"]}" font-size="{item["size"]}" font-family="{font_family}" text-anchor="middle">{txt}</text>')
+    # Highlights
+    parts.append(f"""  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.35s" fill="freeze"/>
+    <text x="{lx}" y="215" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['green']}">╭─ 🏆 Key Highlights</text>
+    
+    <text x="{lx + 8}" y="234" font-family="{font_family}" font-size="11" fill="{PALETTE['green']}">★ 8+ Analytics &amp; AI Projects</text>
+    <text x="{lx + 8}" y="251" font-family="{font_family}" font-size="11" fill="{PALETTE['green']}">★ Microsoft Power BI Certified</text>
+    <text x="{lx + 8}" y="268" font-family="{font_family}" font-size="11" fill="{PALETTE['green']}">★ Microsoft Fabric Certified</text>
+    <text x="{lx + 8}" y="285" font-family="{font_family}" font-size="11" fill="{PALETTE['green']}">★ Cisco Data Analytics Certified</text>
+  </g>""")
 
-        parts.append("  </g>")
+    # Vertical Separator between columns
+    parts.append(f'<line x1="325" y1="50" x2="325" y2="350" stroke="{PALETTE["border"]}" stroke-width="0.8" opacity="0.6"/>')
 
-        if item["type"] != "footer":
-            curr_y += line_h
+    # ============================================================================
+    # RIGHT COLUMN (x=340 to 630)
+    # ============================================================================
+    rx = 340
+
+    # Tech Stack
+    parts.append(f"""  <!-- RIGHT COLUMN -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="0.35s" fill="freeze"/>
+    <text x="{rx}" y="58" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['cyan']}">╭─ 🛠️ Tech Stack</text>
+    
+    <text x="{rx + 8}" y="77" font-family="{font_family}" font-size="10.5"><tspan font-weight="bold" fill="{PALETTE['cyan']}">BI    : </tspan><tspan fill="{PALETTE['white']}">Power BI · DAX · Fabric</tspan></text>
+    <text x="{rx + 8}" y="94" font-family="{font_family}" font-size="10.5"><tspan font-weight="bold" fill="{PALETTE['cyan']}">DB    : </tspan><tspan fill="{PALETTE['white']}">PostgreSQL · MongoDB</tspan></text>
+    <text x="{rx + 8}" y="111" font-family="{font_family}" font-size="10.5"><tspan font-weight="bold" fill="{PALETTE['cyan']}">Lang  : </tspan><tspan fill="{PALETTE['white']}">Python · SQL · JS · C++</tspan></text>
+    <text x="{rx + 8}" y="128" font-family="{font_family}" font-size="10.5"><tspan font-weight="bold" fill="{PALETTE['cyan']}">AI    : </tspan><tspan fill="{PALETTE['white']}">Gemini · Claude · DeepSeek</tspan></text>
+  </g>""")
+
+    # Featured Projects
+    parts.append(f"""  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.35s" fill="freeze"/>
+    <text x="{rx}" y="153" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['blue']}">╭─ 📂 Featured Projects</text>
+    
+    <text x="{rx + 8}" y="172" font-family="{font_family}" font-size="11" font-weight="bold" fill="{PALETTE['cyan']}">🚀 Velora AI <tspan font-weight="normal" fill="{PALETTE['muted']}">— MERN + AI Builder</tspan></text>
+    <text x="{rx + 8}" y="189" font-family="{font_family}" font-size="11" font-weight="bold" fill="{PALETTE['cyan']}">📦 Samsung Supply Chain <tspan font-weight="normal" fill="{PALETTE['muted']}">— Power BI</tspan></text>
+    <text x="{rx + 8}" y="206" font-family="{font_family}" font-size="11" font-weight="bold" fill="{PALETTE['cyan']}">🎵 Spotify Top 50 <tspan font-weight="normal" fill="{PALETTE['muted']}">— DAX Analytics</tspan></text>
+    <text x="{rx + 8}" y="223" font-family="{font_family}" font-size="11" font-weight="bold" fill="{PALETTE['cyan']}">🍔 Swiggy vs Zomato <tspan font-weight="normal" fill="{PALETTE['muted']}">— PostgreSQL BI</tspan></text>
+  </g>""")
+
+    # Certifications
+    parts.append(f"""  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.35s" fill="freeze"/>
+    <text x="{rx}" y="248" font-family="{font_family}" font-size="11.5" font-weight="bold" fill="{PALETTE['yellow']}">╭─ 📜 Certifications</text>
+    
+    <text x="{rx + 8}" y="267" font-family="{font_family}" font-size="10.5" fill="{PALETTE['white']}">✓ Power BI &amp; Fabric (Microsoft)</text>
+    <text x="{rx + 8}" y="284" font-family="{font_family}" font-size="10.5" fill="{PALETTE['white']}">✓ Data Analytics Essentials (Cisco)</text>
+  </g>""")
+
+    # Bottom Banner Footer (across full 650px width)
+    parts.append(f"""  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="1.1s" dur="0.35s" fill="freeze"/>
+    <line x1="20" y1="316" x2="{SVG_W - 20}" y2="316" stroke="{PALETTE['border']}" stroke-width="0.8" opacity="0.6"/>
+    
+    <text x="20" y="336" font-family="{font_family}" font-size="10.5">
+      <tspan font-weight="bold" fill="{PALETTE['purple']}">Building: </tspan>
+      <tspan fill="{PALETTE['white']}">AI Analytics Platform • Interactive BI Dashboards • MERN AI</tspan>
+    </text>
+    
+    <text x="20" y="353" font-family="{font_family}" font-size="10.5">
+      <tspan font-weight="bold" fill="{PALETTE['purple']}">Learning: </tspan>
+      <tspan fill="{PALETTE['white']}">Data Engineering • Real-Time Analytics • DeepSeek Pipelines</tspan>
+    </text>
+    
+    <text x="{SVG_W // 2}" y="382" font-family="{font_family}" font-size="10" fill="{PALETTE['muted']}" text-anchor="middle">github.com/{USERNAME}</text>
+  </g>""")
 
     # Scanline texture overlay
     parts.append(f'  <rect x="{INNER_X}" y="{INNER_Y + TITLE_BAR_H}" width="{CONTENT_W}" height="{CONTENT_H - TITLE_BAR_H}" fill="url(#info-scanlines)" opacity="0.1" pointer-events="none" rx="6"/>')
