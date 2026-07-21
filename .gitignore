@@ -1,0 +1,11 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary / workaround dataurl files
+*_dataurl.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db

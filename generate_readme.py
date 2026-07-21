@@ -5,7 +5,7 @@ Injects the three SVG cards into README.md using HTML comment markers.
 
   Layout:
     ┌─────────────────────────────────────┐
-    │  terminal-card  │   info-card        │
+    │  terminal-card  │   info-card       │
     └─────────────────────────────────────┘
          github-contribution-animation
 """
@@ -16,8 +16,11 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import OUT_README, OUT_CONTRIB, OUT_TERMINAL, OUT_INFO, USERNAME, DISPLAY_NAME
 
-MARKER_START = "<!-- PROFILE-START -->"
-MARKER_END   = "<!-- PROFILE-END -->"
+MARKER_START = "<!-- GITHUB-ASSETS-START -->"
+MARKER_END   = "<!-- GITHUB-ASSETS-END -->"
+
+LEGACY_START = "<!-- PROFILE-START -->"
+LEGACY_END   = "<!-- PROFILE-END -->"
 
 
 def _rel(path: str) -> str:
@@ -36,24 +39,21 @@ def _build_injection(
     ic = _rel(info_path)
     cc = _rel(contrib_path)
 
-    return f"""{MARKER_START}
-
-<div align="center">
-
-<!-- Terminal ASCII Portrait -->
-<img src="{tc}" alt="Terminal ASCII Portrait" width="600"/>
-<br/><br/>
-
-<!-- Neofetch Info Card -->
-<img src="{ic}" alt="Neofetch Info Card" width="820"/>
-<br/><br/>
-
-<!-- Contribution Graph -->
-<img src="{cc}" alt="GitHub Contribution Graph" width="900"/>
-
-</div>
-
-{MARKER_END}"""
+    return (
+        f"{MARKER_START}\n"
+        '<p align="center">\n'
+        "<table>\n"
+        "<tr>\n"
+        f'<td><img src="{tc}" width="520"/></td>\n'
+        f'<td><img src="{ic}" width="340"/></td>\n'
+        "</tr>\n"
+        "</table>\n"
+        "</p>\n\n"
+        '<p align="center">\n'
+        f'  <img src="{cc}" width="900"/>\n'
+        "</p>\n"
+        f"{MARKER_END}"
+    )
 
 
 def inject(
@@ -64,24 +64,39 @@ def inject(
 ) -> None:
     injection = _build_injection(terminal_path, info_path, contrib_path)
 
-    # Read or bootstrap README
     if os.path.exists(readme_path):
         with open(readme_path, "r", encoding="utf-8") as f:
             content = f.read()
     else:
         content = _default_readme()
 
+    # First, strip legacy markers if present to avoid duplication
+    if LEGACY_START in content and LEGACY_END in content:
+        before_legacy = content[:content.index(LEGACY_START)]
+        after_legacy = content[content.index(LEGACY_END) + len(LEGACY_END):]
+        content = (before_legacy.strip() + "\n\n" + after_legacy.strip()).strip()
+
+    # Next, inject or replace inside GITHUB-ASSETS markers
     if MARKER_START in content and MARKER_END in content:
-        # Replace between markers
         before = content[:content.index(MARKER_START)]
         after  = content[content.index(MARKER_END) + len(MARKER_END):]
-        new_content = before + injection + after
+        new_content = before.rstrip() + "\n\n" + injection + "\n\n" + after.lstrip()
     else:
-        # Prepend the block if markers are missing
-        new_content = injection + "\n\n" + content
+        # Prepend after first title heading if present, else at top
+        lines = content.splitlines()
+        header_idx = -1
+        for idx, line in enumerate(lines):
+            if line.startswith("#"):
+                header_idx = idx
+                break
+        if header_idx != -1:
+            lines.insert(header_idx + 1, "\n" + injection + "\n")
+            new_content = "\n".join(lines)
+        else:
+            new_content = injection + "\n\n" + content
 
     with open(readme_path, "w", encoding="utf-8") as f:
-        f.write(new_content)
+        f.write(new_content.strip() + "\n")
 
     print(f"[✓] README updated: {readme_path}")
 
