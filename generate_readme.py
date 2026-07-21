@@ -41,6 +41,7 @@ def _build_injection(
     cc = _rel(contrib_path)
 
     profile_url = f"https://github.com/{USERNAME}"
+    contrib_url = f"https://github.com/{USERNAME}?tab=overview"
 
     return (
         f"{MARKER_START}\n"
@@ -53,7 +54,7 @@ def _build_injection(
         "</table>\n"
         "</p>\n\n"
         '<p align="center">\n'
-        f'  <a href="{profile_url}"><img src="{cc}" alt="GitHub Contribution Graph" width="900"/></a>\n'
+        f'  <a href="{contrib_url}"><img src="{cc}" alt="GitHub Contribution Graph" width="900"/></a>\n'
         "</p>\n"
         f"{MARKER_END}"
     )

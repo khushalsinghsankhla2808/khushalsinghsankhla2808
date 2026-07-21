@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/khushalsinghsankhla2808"><img src="github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/></a>
+  <a href="https://github.com/khushalsinghsankhla2808?tab=overview"><img src="github-contribution-animation.svg" alt="GitHub Contribution Graph" width="900"/></a>
 </p>
 <!-- GITHUB-ASSETS-END -->
 

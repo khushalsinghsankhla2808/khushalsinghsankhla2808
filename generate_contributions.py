@@ -64,8 +64,47 @@ def fetch_contributions(username: str, token: str | None) -> list[list[int]]:
         try:
             return _fetch_github_graphql(username, token)
         except Exception as e:
-            print(f"[warn] GraphQL fetch failed ({e}), using mock data.")
+            print(f"[warn] GraphQL fetch failed ({e}), trying public HTML fetch.")
+    try:
+        return _fetch_github_html(username)
+    except Exception as e:
+        print(f"[warn] HTML fetch failed ({e}), using mock data.")
     return _mock_contributions(username)
+
+
+def _fetch_github_html(username: str) -> list[list[int]]:
+    """Fetch real public contribution levels by parsing GitHub's public contribution calendar page."""
+    import re
+    import requests
+    url = f"https://github.com/users/{username}/contributions"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    resp = requests.get(url, headers=headers, timeout=10)
+    resp.raise_for_status()
+
+    matches = re.findall(r'data-level="([0-4])"', resp.text)
+    if not matches:
+        raise ValueError("No data-level elements found in contribution HTML")
+
+    levels = [int(m) for m in matches]
+    grid = []
+    current_col = []
+    for lvl in levels:
+        current_col.append(lvl)
+        if len(current_col) == DAYS:
+            grid.append(current_col)
+            current_col = []
+    if current_col:
+        while len(current_col) < DAYS:
+            current_col.append(0)
+        grid.append(current_col)
+
+    while len(grid) < WEEKS:
+        grid.insert(0, [0] * DAYS)
+
+    return grid[-WEEKS:]
+
 
 
 def _fetch_github_graphql(username: str, token: str) -> list[list[int]]:
