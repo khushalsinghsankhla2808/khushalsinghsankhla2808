@@ -5057,7 +5057,7 @@
     <g id="c30r6">
       <!-- base rect -->
       <rect x="448" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -5075,6 +5075,16 @@
                  begin="0.750s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="448" y="136" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.050s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c31r0">
@@ -5218,7 +5228,7 @@
     <g id="c31r6">
       <!-- base rect -->
       <rect x="462" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -5236,16 +5246,6 @@
                  begin="0.775s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="462" y="136" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.075s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c32r0">
@@ -5757,7 +5757,7 @@
     <g id="c35r1">
       <!-- base rect -->
       <rect x="518" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -5776,11 +5776,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="518" y="66" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.300s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c35r2">
       <!-- base rect -->
       <rect x="518" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -5798,6 +5808,16 @@
                  begin="0.975s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="518" y="80" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.275s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c35r3">
@@ -5918,7 +5938,7 @@
     <g id="c36r1">
       <!-- base rect -->
       <rect x="532" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -5937,21 +5957,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="532" y="66" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.325s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c36r2">
       <!-- base rect -->
       <rect x="532" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -5969,16 +5979,6 @@
                  begin="1.000s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="532" y="80" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.300s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c36r3">
@@ -6007,7 +6007,7 @@
     <g id="c36r4">
       <!-- base rect -->
       <rect x="532" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6025,6 +6025,16 @@
                  begin="0.950s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="532" y="108" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.250s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c36r5">
@@ -6076,7 +6086,7 @@
     <g id="c37r0">
       <!-- base rect -->
       <rect x="546" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6094,6 +6104,16 @@
                  begin="1.075s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="546" y="52" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.375s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c37r1">
@@ -6145,7 +6165,7 @@
     <g id="c37r3">
       <!-- base rect -->
       <rect x="546" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6163,6 +6183,16 @@
                  begin="1.000s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="546" y="94" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.300s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c37r4">
@@ -6247,7 +6277,7 @@
     <g id="c38r0">
       <!-- base rect -->
       <rect x="560" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6280,7 +6310,7 @@
     <g id="c38r1">
       <!-- base rect -->
       <rect x="560" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6299,11 +6329,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="560" y="66" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.375s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c38r2">
       <!-- base rect -->
       <rect x="560" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6322,11 +6362,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="560" y="80" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.350s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c38r3">
       <!-- base rect -->
       <rect x="560" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6415,7 +6465,7 @@
     <g id="c38r6">
       <!-- base rect -->
       <rect x="560" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6434,11 +6484,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="560" y="136" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.250s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c39r0">
       <!-- base rect -->
       <rect x="574" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#006d32">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6457,21 +6517,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="574" y="52" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.425s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c39r1">
       <!-- base rect -->
       <rect x="574" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6490,21 +6540,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="574" y="66" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.400s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c39r2">
       <!-- base rect -->
       <rect x="574" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#006d32">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6523,21 +6563,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="574" y="80" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.375s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c39r3">
       <!-- base rect -->
       <rect x="574" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#006d32">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6556,21 +6586,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="574" y="94" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.350s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c39r4">
       <!-- base rect -->
       <rect x="574" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6589,21 +6609,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="574" y="108" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.325s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c39r5">
       <!-- base rect -->
       <rect x="574" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6622,11 +6632,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="574" y="122" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.300s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c39r6">
       <!-- base rect -->
       <rect x="574" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6644,16 +6664,6 @@
                  begin="0.975s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="574" y="136" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.275s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c40r0">
@@ -6728,7 +6738,7 @@
     <g id="c40r3">
       <!-- base rect -->
       <rect x="588" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6746,6 +6756,16 @@
                  begin="1.075s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="588" y="94" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.375s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c40r4">
@@ -6774,7 +6794,7 @@
     <g id="c40r5">
       <!-- base rect -->
       <rect x="588" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6793,21 +6813,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="588" y="122" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.325s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c40r6">
       <!-- base rect -->
       <rect x="588" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6826,11 +6836,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="588" y="136" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.300s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c41r0">
       <!-- base rect -->
       <rect x="602" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6849,11 +6869,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="602" y="52" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.475s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c41r1">
       <!-- base rect -->
       <rect x="602" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6871,6 +6901,16 @@
                  begin="1.150s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="602" y="66" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.450s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c41r2">
@@ -6899,7 +6939,7 @@
     <g id="c41r3">
       <!-- base rect -->
       <rect x="602" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6918,21 +6958,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="602" y="94" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.400s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c41r4">
       <!-- base rect -->
       <rect x="602" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6951,11 +6981,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="602" y="108" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.375s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c41r5">
       <!-- base rect -->
       <rect x="602" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -6974,11 +7014,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="602" y="122" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.350s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c41r6">
       <!-- base rect -->
       <rect x="602" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#006d32">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7011,7 +7061,7 @@
     <g id="c42r0">
       <!-- base rect -->
       <rect x="616" y="52" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7029,16 +7079,6 @@
                  begin="1.200s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="616" y="52" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.500s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c42r1">
@@ -7077,7 +7117,7 @@
     <g id="c42r2">
       <!-- base rect -->
       <rect x="616" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7096,11 +7136,21 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
+      <!-- glint overlay -->
+      <rect x="616" y="80" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.450s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
+      </rect>
     </g>
     <g id="c42r3">
       <!-- base rect -->
       <rect x="616" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#161b22">
+            fill="#26a641" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7118,6 +7168,16 @@
                  begin="1.125s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
+      </rect>
+      <!-- glint overlay -->
+      <rect x="616" y="94" width="11" height="11" rx="2" ry="2"
+            fill="url(#glint-grad)" opacity="0" pointer-events="none">
+        <animate attributeName="opacity"
+                 values="0;0.95;0"
+                 keyTimes="0;0.4;1"
+                 begin="1.425s" dur="0.250s"
+                 fill="freeze" calcMode="spline"
+                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c42r4">
@@ -7156,7 +7216,7 @@
     <g id="c42r5">
       <!-- base rect -->
       <rect x="616" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7189,7 +7249,7 @@
     <g id="c42r6">
       <!-- base rect -->
       <rect x="616" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#006d32">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7245,7 +7305,7 @@
     <g id="c43r1">
       <!-- base rect -->
       <rect x="630" y="66" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7264,21 +7324,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="630" y="66" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.500s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c43r2">
       <!-- base rect -->
       <rect x="630" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#39d353" filter="url(#glow-green)">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7311,7 +7361,7 @@
     <g id="c43r3">
       <!-- base rect -->
       <rect x="630" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7344,7 +7394,7 @@
     <g id="c43r4">
       <!-- base rect -->
       <rect x="630" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#26a641" filter="url(#glow-green)">
+            fill="#0e4429">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7377,7 +7427,7 @@
     <g id="c43r5">
       <!-- base rect -->
       <rect x="630" y="122" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7396,21 +7446,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="630" y="122" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.400s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c43r6">
       <!-- base rect -->
       <rect x="630" y="136" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7428,16 +7468,6 @@
                  begin="1.075s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="630" y="136" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.375s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c44r0">
@@ -7489,7 +7519,7 @@
     <g id="c44r2">
       <!-- base rect -->
       <rect x="644" y="80" width="11" height="11" rx="2" ry="2"
-            fill="#39d353" filter="url(#glow-green)">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7508,21 +7538,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="644" y="80" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.500s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c44r3">
       <!-- base rect -->
       <rect x="644" y="94" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7541,21 +7561,11 @@
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
       </rect>
-      <!-- glint overlay -->
-      <rect x="644" y="94" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.475s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
-      </rect>
     </g>
     <g id="c44r4">
       <!-- base rect -->
       <rect x="644" y="108" width="11" height="11" rx="2" ry="2"
-            fill="#0e4429">
+            fill="#161b22">
         <!-- reveal: fade in -->
         <animate attributeName="opacity"
                  values="0;1"
@@ -7573,16 +7583,6 @@
                  begin="1.150s" dur="0.210s"
                  fill="freeze" calcMode="spline"
                  keySplines="0.34 1.56 0.64 1" keyTimes="0;1"/>
-      </rect>
-      <!-- glint overlay -->
-      <rect x="644" y="108" width="11" height="11" rx="2" ry="2"
-            fill="url(#glint-grad)" opacity="0" pointer-events="none">
-        <animate attributeName="opacity"
-                 values="0;0.95;0"
-                 keyTimes="0;0.4;1"
-                 begin="1.450s" dur="0.250s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0 0.25 1;0.25 0 0.25 1"/>
       </rect>
     </g>
     <g id="c44r5">
